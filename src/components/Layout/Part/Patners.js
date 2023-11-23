@@ -39,7 +39,7 @@ const Patners = () => {
   ];
 
   return (
-    <section className="h-[28.75rem] w-full mt-2 max-w-[80rem] mx-auto">
+    <section className="h-[28.75rem] w-full max-w-[80rem] mx-auto">
       <h1 className="text-center text-[#1D1D1F] text-[2.875rem] pt-[6.25rem] font-bold leading-[3.875rem] tracking-[-0.0575rem]">
         Meet Our <span className="text-[#017A59]">Patners</span>
       </h1>

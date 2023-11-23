@@ -35,7 +35,7 @@ const Payment = () => {
           <h1 className="pb-[1rem] text-[#017A59] text-[1.375rem] font-semibold leading-[2rem]">
             Global payroll.
           </h1>
-          <p className="pb-[4.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+          <p className="pb-[6.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
             Hire staff from all over the world and pay salaries <br />
             in one click. No conversion or tax problems, just a <br />
             hassle free payroll.
@@ -46,7 +46,7 @@ const Payment = () => {
         <img
           src={Money}
           alt=""
-          className="object-cover w-[48.22694rem] h-[30rem]"
+          className="object-cover w-[62.22694rem] h-[35rem]"
         />
       </div>
     </section>

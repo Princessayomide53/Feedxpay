@@ -13,7 +13,7 @@ const Join = () => {
         </h1>
         <p className="text-[1.375rem] text-[#1D1D1F] font-medium leading-[2.125rem]">
           Our goal is to protect what’s most precious <br />
-          to our users; their time, energy and resources
+          to our users their time, energy and resources
         </p>
         <div className="flex pt-[5rem] gap-[2rem]">
           <img

@@ -5,17 +5,30 @@ import Main from "./components/Layout/Main/Main";
 import Part from "./components/Layout/Part/Part";
 import Join from "./components/Layout/Join/Join";
 import Footer from "./components/Layout/Footer/Footer";
-// import Patners from "./components/Layout/Part/Patners";
+import { useState } from "react";
+import Products from "./components/Layout/NavBar/Products";
+// import Subscribe from "./components/Layout/Footer/Subscribe";
 
 function App() {
+  const [modal, setModals] = useState(false);
+
+  const openModal = () => {
+    setModals(true);
+  };
+  const closeModal = () => {
+    setModals(false);
+  };
+
   return (
     <div>
-      <Nav />
+      <Nav onClick={openModal} />
+      <Products onClose={closeModal} />
       <Hero />
       <Main />
       <Part />
       <Join />
       <Footer />
+      {/* <Subscribe /> */}
       {/* <Patners /> */}
     </div>
   );

@@ -6,10 +6,10 @@ import pngwing2 from "../../../Assets/pngwing2.png";
 const Hero = () => {
   return (
     <header className="background">
-      <div className=" h-[57.06rem] w-full  max-w-[85rem] mx-auto">
+      <div className=" h-[57.06rem] w-full max-w-[83rem] mx-auto">
         <div className="flex justify-between">
           <div>
-            <h1 className="text-[#1D1D1F] text-[2.795rem] font-bold leading-[3.875rem] tracking-[-0.0575rem] pt-[9.3rem] pb-[1rem]">
+            <h1 className="text-[#1D1D1F] text-[2.595rem] font-bold leading-[3.875rem] tracking-[-0.0575rem] pt-[9.3rem] pb-[1rem]">
               The <span className="text-[#017A59]">NeoBank</span> for <br />
               transcending borders.
               <br /> Built for global spending <br /> and multinational
@@ -37,7 +37,7 @@ const Hero = () => {
             <img
               src={Feedxpay}
               alt="feedxpay"
-              className="object-cover w-[54.5625rem] h-[52rem]"
+              className="object-cover w-[54.5625rem] h-[50rem]"
             />
           </div>
         </div>
