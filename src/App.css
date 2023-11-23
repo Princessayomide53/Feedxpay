@@ -24,3 +24,61 @@ body {
       rgba(245, 245, 247, 0) 53.91%
     );
 }
+
+.container {
+  /* Set a fixed height and overflow-y to enable scrolling */
+  height: 500px;
+  direction: rtl;
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #017a59 #eeeeee; /* For Firefox */
+}
+
+.container::-webkit-scrollbar {
+  width: 5px; /* Set the width of the scrollbar */
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #017a59; /* Set the color of the thumb (the draggable part) */
+  height: 50px;
+}
+
+.container::-webkit-scrollbar-track {
+  background-color: #eeeeee; /* Set the color of the track (the non-draggable part) */
+}
+
+.text {
+  direction: ltr;
+}
+
+@keyframes moveLogos {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10%);
+  }
+
+  60% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.logos {
+  animation: moveLogos 5s infinite linear;
+}
+.bgs {
+  background: linear-gradient(
+      273deg,
+      rgba(235, 255, 245, 0.5) 7.83%,
+      rgba(235, 255, 245, 0) 49.85%
+    ),
+    linear-gradient(
+      121deg,
+      rgba(235, 255, 245, 0.5) 14.46%,
+      rgba(240, 250, 246, 0.26) 33.72%,
+      rgba(245, 245, 247, 0) 53.91%
+    );
+}
