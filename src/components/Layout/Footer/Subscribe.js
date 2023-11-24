@@ -3,7 +3,7 @@ import { IoArrowForwardCircle } from "react-icons/io5";
 
 const Subscribe = () => {
   return (
-    <section className="pt-[21.25rem] max-w-[85rem] mx-auto">
+    <section className="pt-[18.25rem] max-w-[85rem] mx-auto">
       <h4 className="text-white text-[1.5rem] font-semibold leading-[2.3125rem] tracking-[-0.03rem]">
         Follow our latest news
       </h4>

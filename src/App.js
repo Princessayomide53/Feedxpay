@@ -7,6 +7,7 @@ import Join from "./components/Layout/Join/Join";
 import Footer from "./components/Layout/Footer/Footer";
 import { useState } from "react";
 import Products from "./components/Layout/NavBar/Products";
+// import RouterComponent from "./components/Layout/RouterComponent/RouterComponent";
 // import Subscribe from "./components/Layout/Footer/Subscribe";
 
 function App() {
@@ -22,12 +23,13 @@ function App() {
   return (
     <div>
       <Nav onClick={openModal} />
-      <Products onClose={closeModal} />
+      {modal && <Products onHideModal={closeModal} />}
       <Hero />
       <Main />
       <Part />
       <Join />
       <Footer />
+      {/* <RouterComponent /> */}
       {/* <Subscribe /> */}
       {/* <Patners /> */}
     </div>
