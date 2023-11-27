@@ -2,12 +2,13 @@ import React from "react";
 import "../../../App.css";
 import Logo from "../../../Assets/Logo.png";
 import { TiArrowSortedDown } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 const Nav = (props) => {
   return (
-    <section className="bg">
-      <nav className="h-[10.5rem]">
-        <div className="flex py-5 max-w-[83rem] mx-auto">
+    <section className="bg ">
+      <nav className="fixed left-0 top-0 w-full bg h-[10.5rem] z-30">
+        <div className="flex py-5 max-w-[83rem] mx-auto ">
           <p className="text-[#017A59] pb-2 uppercase text-[1rem] px-5 border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]">
             For Individuals
           </p>
@@ -16,7 +17,10 @@ const Nav = (props) => {
           </p>
         </div>
         <div className="flex justify-between max-w-[83rem] mx-auto py-[1.17rem]">
-          <img src={Logo} alt="" className="w-[14.5rem] h-[2.5rem]" />
+          <Link to="/">
+            <img src={Logo} alt="" className="w-[14.5rem] h-[2.5rem]" />
+          </Link>
+
           <ul className="flex space-x-[3.12rem] mt-3">
             <li
               className="flex gap-1 cursor-pointer text-[#1D1D1F] text-[1.0625rem] font-semibold leading-[1.5rem] tracking-[-0.02125rem]"

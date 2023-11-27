@@ -116,3 +116,23 @@ body {
 .contain:hover .text2 {
   color: white !important;
 }
+
+.active-section {
+  color: #017a59;
+}
+
+.line-container {
+  position: relative;
+  width: 0.225rem;
+  height: 45.725rem;
+  background-color: #e8e9eb;
+  margin-top: 4.38rem;
+}
+
+.line {
+  border-left: 4px solid #017a59;
+  transition: border-left-color 0.3s ease-in-out;
+  border-radius: 10px;
+  height: 10.85rem;
+  position: absolute;
+}

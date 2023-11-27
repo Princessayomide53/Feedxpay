@@ -6,7 +6,7 @@ import pngwing2 from "../../../Assets/pngwing2.png";
 const Hero = () => {
   return (
     <header className="background">
-      <div className=" h-[57.06rem] w-full max-w-[83rem] mx-auto">
+      <div className=" h-[57.06rem] w-full max-w-[83rem] mx-auto pt-[9rem]">
         <div className="flex justify-between">
           <div>
             <h1 className="text-[#1D1D1F] text-[2.595rem] font-bold leading-[3.875rem] tracking-[-0.0575rem] pt-[9.3rem] pb-[1rem]">

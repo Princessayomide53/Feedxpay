@@ -7,34 +7,33 @@ const Savings = () => {
       id: 1,
       num: "01",
       name: "Emergency Preparedness",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Sometimes, expenses come unprepared, however, with the help of savings, it becomes easy to cater for unforeseen needs when they arise.",
     },
     {
       id: 2,
       num: "02",
       name: "Financial Discipline",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Regular savings instills financial discipline and responsible money management, promoting good money spending culture.",
     },
     {
       id: 3,
       num: "03",
       name: "Interest & Investment gains",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Rather than spend on unnecessary things, savings helps you to invest and earn returns or interest, allowing your money to grow over time.",
     },
     {
       id: 4,
       num: "04",
-      name: "Safe & Secure Transactions",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      name: "Reduced Financial Stress",
+      text: "Knowing you have money saved somewhere reduce stress and anxiety associated with financial uncertainty, allowing you to focus on other aspect of your life.",
     },
   ];
   return (
     <main className="max-w-[83rem] mx-auto flex justify-between">
       <div className="flex flex-col justify-center pt-[2rem] ">
         <h1 className="text-[2.875rem] pb-[0.5rem] font-bold leading-[3.875rem] tracking-[-0.0575rem]">
-          Savings comes with <br /> Various
-          <span className="text-[#017A59] ">Benefits</span> You <br />
-          can bank on US
+          Savings comes with <br />
+          Various<span className="text-[#017A59] pl-5">Benefits</span>
         </h1>
         <p className="text-[#8A9099] text-[1.375rem] font-medium leading-[2.125rem]">
           Benefits of saving are numerous, this is

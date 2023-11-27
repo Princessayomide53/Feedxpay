@@ -1,33 +1,34 @@
 import React, { useState } from "react";
 import Nav from "../../NavBar/Nav";
-import Pay from "../../../../Assets/Pay.png";
+import Invests from "../../../../Assets/Invests.png";
 import pngwing1 from "../../../../Assets/pngwing1.png";
 import pngwing2 from "../../../../Assets/pngwing2.png";
-// import Modal from "../../../UI/Modal";
 import Products from "../../NavBar/Products";
 
-const Header = () => {
+const Header4 = () => {
   const [modal, setModals] = useState(false);
 
   const openModal = () => {
     setModals(true);
   };
-
   return (
     <>
       <Nav onClick={openModal} />
       {modal && <Products onHideModal={() => setModals(false)} />}
-      <header className=" background h-[67.5625rem]">
-        <div className="flex justify-around max-w-[83rem] mx-auto pt-[9.5rem]">
-          <div className="pt-[12.11rem]">
-            <h1 className="text-[#1D1D1F] pb-[1rem] text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem]">
-              Make <span className="text-[#017A59]">payments</span> across{" "}
+
+      <section className="background h-[67.06rem]">
+        <header className="max-w-[83rem] mx-auto flex justify-between pt-[9.5rem]">
+          <div>
+            <h1 className="text-[#1D1D1F] pt-[13.81rem] text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem]">
+              Invest Smart
               <br />
-              borders seemlessly.
+              Safeguard your Future <br />
+              <span className="text-[#017A59]">Invest TODAY!</span>
             </h1>
-            <p className="text-[#8A9099] text-[1.375rem] font-medium leading-[2.125rem]">
-              Send money locally and internationally to <br />
-              any country. It is quick and easy.
+
+            <p className="text-[#8A9099] pt-[1rem]  text-[1.375rem] font-medium leading-[2.125rem]">
+              All seasons are not the same. Save now and start <br />
+              enjoying financial independence.
             </p>
             <div className="flex pt-[6rem] gap-[2rem]">
               <img
@@ -42,17 +43,17 @@ const Header = () => {
               />
             </div>
           </div>
-          <div className="pt-[3.94rem]">
+          <div className="pt-[5.55rem]">
             <img
-              src={Pay}
-              alt="Pay"
-              className="w-[49.3125rem] h-[42.0625rem]"
+              src={Invests}
+              alt=""
+              className="object-cover w-[44.1875rem] h-[44.3125rem]"
             />
           </div>
-        </div>
-      </header>
+        </header>
+      </section>
     </>
   );
 };
 
-export default Header;
+export default Header4;

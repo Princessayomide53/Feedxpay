@@ -7,19 +7,6 @@ import Logo2 from "../../../Assets/Logo2.png";
 import Subscribe from "./Subscribe";
 
 const Footer = () => {
-  const Company = [
-    { id: 1, text: "Company" },
-    { id: 2, text: "about US" },
-    { id: 2, text: "Blog" },
-    { id: 2, text: "Careers" },
-  ];
-  const Product = [
-    { id: 1, text: "Produv" },
-    { id: 2, text: "about US" },
-    { id: 2, text: "Blog" },
-    { id: 2, text: "Careers" },
-  ];
-
   return (
     <>
       <footer className="h-[69.875rem] bg-[#017A59] ">

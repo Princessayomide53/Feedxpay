@@ -1,52 +1,155 @@
-import React from "react";
+import React, { useState, useEffect, useRef, useCallback } from "react";
 import Money from "../../../Assets/Money.png";
 import "../../../App.css";
 
 const Payment = () => {
+  const [activeSection, setActiveSection] = useState("PAYMENTS");
+  const [linePosition, setLinePosition] = useState(0);
+  const activeSectionRef = useRef(null);
+
+  const handleSection = useCallback((section) => {
+    setActiveSection(section);
+    const sectionElement = document.getElementById(section);
+    const line = document.querySelector(".line");
+
+    if (sectionElement && line) {
+      const sectionTop = sectionElement.offsetTop - 7.78 * 16;
+      const lineStartPosition = line.offsetTop;
+      const lineEndPosition = sectionTop + sectionElement.offsetHeight / 2;
+
+      animateLine(line, lineStartPosition, lineEndPosition);
+    }
+  }, []);
+
+  const animateLine = (line, startPosition, endPosition) => {
+    const duration = 300;
+    let startTime;
+
+    const moveLine = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = timestamp - startTime;
+
+      const newPosition =
+        progress < duration
+          ? startPosition +
+            ((endPosition - startPosition) * progress) / duration
+          : endPosition;
+
+      line.style.top = `${newPosition}px`;
+
+      if (progress < duration) {
+        requestAnimationFrame(moveLine);
+      }
+    };
+
+    requestAnimationFrame(moveLine);
+  };
+
+  useEffect(() => {
+    handleSection("PAYMENTS");
+  }, [handleSection]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll(".section");
+      let closestSection = sections[0];
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 10.85 * 16;
+        if (window.scrollY >= sectionTop) {
+          closestSection = section;
+        }
+      });
+
+      const newActiveSection = closestSection.getAttribute("data-section");
+      if (newActiveSection !== activeSectionRef.current) {
+        setActiveSection(newActiveSection);
+        activeSectionRef.current = newActiveSection;
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [activeSection]);
+
   return (
-    <section className="flex justify-around">
-      <div className="overflow-y-scroll container  px-[1.56rem]">
-        <div className="text">
-          <h1 className="pb-[1rem] text-[#017A59] text-[1.375rem] font-semibold leading-[2rem]">
-            Virtual Account Creation Globally
-          </h1>
-          <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
-            Create a functioning business account that caters
-            <br /> to your business needs locally and internationally.
-            <br />
-            It takes less than 10 - minutes
-          </p>
-          <h1 className="pb-[1rem] text-[#017A59] text-[1.375rem] font-semibold leading-[2rem]">
-            API's for global expansion.
-          </h1>
-          <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
-            The world is your canvas when you integrate our <br />
-            API's into your payment process.
-          </p>
-          <h1 className="pb-[1rem] text-[#017A59] text-[1.375rem] font-semibold leading-[2rem]">
-            Business registration
-          </h1>
-          <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
-            We understand the value of location to businesses <br />
-            and we are here to facilitate your business registration <br />
-            anywhere in the world. compliance and registration <br />
-            world wide.
-          </p>
-          <h1 className="pb-[1rem] text-[#017A59] text-[1.375rem] font-semibold leading-[2rem]">
-            Global payroll.
-          </h1>
-          <p className="pb-[6.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
-            Hire staff from all over the world and pay salaries <br />
-            in one click. No conversion or tax problems, just a <br />
-            hassle free payroll.
-          </p>
-        </div>
+    <section className="flex justify-around relative">
+      <div className="line-container">
+        <div
+          className={`${"border-l-2 border-[#017a59] h-[10.875rem] transition-all duration-300"} line`}
+          style={{ top: `calc(${linePosition}px - 4.38rem)` }}
+        ></div>
+      </div>
+      <div className="pt-[5.69rem] cursor-pointer">
+        <h1
+          onClick={() => handleSection("PAYMENTS")}
+          className={`pb-[1rem] text-[${
+            activeSection === "PAYMENTS" ? "#017A59" : "text-#1D1D1F"
+          }] text-[1.375rem] font-semibold leading-[2rem] section`}
+          data-section="PAYMENTS"
+          id="PAYMENTS"
+        >
+          PAYMENTS
+        </h1>
+        <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+          Make (Local and international transactions)
+          <br />
+          and scheduled payments
+        </p>
+
+        <h1
+          onClick={() => handleSection("VIRTUAL CARDS")}
+          className={`pb-[1rem] text-[${
+            activeSection === "VIRTUAL CARDS" ? "#017A59" : "#1D1D1F"
+          }] text-[1.375rem] font-semibold leading-[2rem] section `}
+          data-section="VIRTUAL CARDS"
+          id="VIRTUAL CARDS"
+        >
+          VIRTUAL CARDS
+        </h1>
+        <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+          One tool, one easy way to transact business
+          <br />
+          seemlessly.
+        </p>
+
+        <h1
+          onClick={() => handleSection("SAVINGS")}
+          className={`pb-[1rem] text-[${
+            activeSection === "SAVINGS" ? "#017A59" : "#1D1D1F"
+          }] text-[1.375rem] font-semibold leading-[2rem] section`}
+          data-section="SAVINGS"
+          id="SAVINGS"
+        >
+          SAVINGS
+        </h1>
+        <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+          Attaining financial success is possible, but <br />
+          only through strategic savings.
+        </p>
+
+        <h1
+          onClick={() => handleSection("INVESTMENTS")}
+          className={`pb-[1rem] text-[${
+            activeSection === "INVESTMENTS" ? "#017A59" : "#1D1D1F"
+          }] text-[1.375rem] font-semibold leading-[2rem] section `}
+          data-section="INVESTMENTS"
+          id="INVESTMENTS"
+        >
+          INVESTMENTS
+        </h1>
+        <p className="pb-[6.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+          Generate positive returns over a period of time by <br />
+          investing with us today.
+        </p>
       </div>
       <div>
         <img
           src={Money}
           alt=""
-          className="object-cover w-[62.22694rem] h-[35rem]"
+          className="object-cover w-[44.1875rem] h-[44.1875rem]"
         />
       </div>
     </section>

@@ -1,5 +1,5 @@
 import React from "react";
-import home from "../../../Assets/home.png";
+import join from "../../../Assets/join.png";
 import pngwing1 from "../../../Assets/pngwing1.png";
 import pngwing2 from "../../../Assets/pngwing2.png";
 
@@ -28,8 +28,12 @@ const Join = () => {
           />
         </div>
       </div>
-      <div>
-        <img src={home} alt="home" className="pt-[7.56rem]" />
+      <div className="pt-[7.56rem] pb-[7.5rem]">
+        <img
+          src={join}
+          alt="home"
+          className="object-cover w-[29.375rem] h-[34.4375rem]"
+        />
       </div>
     </section>
   );

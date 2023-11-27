@@ -34,7 +34,7 @@ const Steps = () => {
         {steps.map((step) => (
           <Card
             key={step.id}
-            className="w-[27.625rem] contain p-[2rem] transition-all duration-300 text-[#ffffff] h-[16.5rem] border-2 border-[#017A59] rounded-lg hover:shadow-xl"
+            className="w-[27.625rem] contain p-[2rem] ease-in-out transition-all duration-300 text-[#ffffff] h-[16.5rem] border-2 border-[#017A59] rounded-lg hover:shadow-xl"
           >
             <h2 className="text-[2.875rem]  text1 font-bold leading-[3.875rem] tracking-[-0.0575rem]">
               {step.steps}

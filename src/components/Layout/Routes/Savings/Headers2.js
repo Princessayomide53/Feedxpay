@@ -1,15 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../../NavBar/Nav";
 import Savings from "../../../../Assets/Savings.png";
 import pngwing1 from "../../../../Assets/pngwing1.png";
 import pngwing2 from "../../../../Assets/pngwing2.png";
+import Products from "../../NavBar/Products";
 
 const Headers2 = () => {
+  const [modal, setModals] = useState(false);
+
+  const openModal = () => {
+    setModals(true);
+  };
   return (
     <>
-      <Nav />
-      <header className=" background h-[57.06rem]">
-        <div className="max-w-[83rem] mx-auto flex justify-between">
+      <Nav onClick={openModal} />
+      {modal && <Products onHideModal={() => setModals(false)} />}
+
+      <header className=" background h-[67.06rem]">
+        <div className="max-w-[83rem] mx-auto flex justify-between pt-[9.5rem]">
           <div className="pt-[11.75rem]">
             <h1 className="text-[#1D1D1F] pb-[1rem] text-[2.875rem] font-bold tracking-[-0.0575rem]">
               Financial wellness starts
