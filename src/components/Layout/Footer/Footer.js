@@ -5,6 +5,7 @@ import { FaTwitter } from "react-icons/fa";
 import { IoLogoInstagram } from "react-icons/io5";
 import Logo2 from "../../../Assets/Logo2.png";
 import Subscribe from "./Subscribe";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -24,9 +25,11 @@ const Footer = () => {
             <p className="text-[1.375rem] font-semibold from leading-[2rem]">
               Company
             </p>
+
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              About US
+              <Link to="/aboutUs"> About US</Link>
             </p>
+
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
               Blog
             </p>

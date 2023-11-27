@@ -5,6 +5,7 @@ import "../../../App.css";
 const Payment = () => {
   const [activeSection, setActiveSection] = useState("PAYMENTS");
   const [linePosition, setLinePosition] = useState(0);
+  const [initialRender, setInitialRender] = useState(true);
   const activeSectionRef = useRef(null);
 
   const handleSection = useCallback((section) => {
@@ -47,6 +48,7 @@ const Payment = () => {
 
   useEffect(() => {
     handleSection("PAYMENTS");
+    setInitialRender(false);
   }, [handleSection]);
 
   useEffect(() => {
@@ -86,7 +88,9 @@ const Payment = () => {
         <h1
           onClick={() => handleSection("PAYMENTS")}
           className={`pb-[1rem] text-[${
-            activeSection === "PAYMENTS" ? "#017A59" : "text-#1D1D1F"
+            activeSection === "PAYMENTS" || initialRender
+              ? "#017A59"
+              : "text-#1D1D1F"
           }] text-[1.375rem] font-semibold leading-[2rem] section`}
           data-section="PAYMENTS"
           id="PAYMENTS"
@@ -103,7 +107,7 @@ const Payment = () => {
           onClick={() => handleSection("VIRTUAL CARDS")}
           className={`pb-[1rem] text-[${
             activeSection === "VIRTUAL CARDS" ? "#017A59" : "#1D1D1F"
-          }] text-[1.375rem] font-semibold leading-[2rem] section `}
+          }] text-[1.375rem] font-semibold leading-[2rem]  `}
           data-section="VIRTUAL CARDS"
           id="VIRTUAL CARDS"
         >
@@ -119,7 +123,7 @@ const Payment = () => {
           onClick={() => handleSection("SAVINGS")}
           className={`pb-[1rem] text-[${
             activeSection === "SAVINGS" ? "#017A59" : "#1D1D1F"
-          }] text-[1.375rem] font-semibold leading-[2rem] section`}
+          }] text-[1.375rem] font-semibold leading-[2rem] `}
           data-section="SAVINGS"
           id="SAVINGS"
         >
@@ -133,8 +137,10 @@ const Payment = () => {
         <h1
           onClick={() => handleSection("INVESTMENTS")}
           className={`pb-[1rem] text-[${
-            activeSection === "INVESTMENTS" ? "#017A59" : "#1D1D1F"
-          }] text-[1.375rem] font-semibold leading-[2rem] section `}
+            activeSection === "INVESTMENTS" || initialRender
+              ? "#017A59"
+              : "#1D1D1F"
+          }] text-[1.375rem] font-semibold leading-[2rem]  `}
           data-section="INVESTMENTS"
           id="INVESTMENTS"
         >

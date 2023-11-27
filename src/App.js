@@ -7,6 +7,7 @@ import Join from "./components/Layout/Join/Join";
 import Footer from "./components/Layout/Footer/Footer";
 import { useState } from "react";
 import Products from "./components/Layout/NavBar/Products";
+import Company from "./components/Layout/NavBar/Company";
 // import RouterComponent from "./components/Layout/RouterComponent/RouterComponent";
 // import Subscribe from "./components/Layout/Footer/Subscribe";
 
@@ -24,6 +25,7 @@ function App() {
     <div>
       <Nav onClick={openModal} />
       {modal && <Products onHideModal={closeModal} />}
+      {modal && <Company onHideModal={closeModal} />}
       <Hero />
       <Main />
       <Part />
