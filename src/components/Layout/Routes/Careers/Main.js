@@ -45,8 +45,7 @@ const Main = () => {
     <section>
       <main className="pt-[6.25rem] max-w-[83rem] mx-auto">
         <h1 className="text-center text-[#1D1D1F] text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem] pb-[1.8rem]">
-          We
-          <span className="text-[#017A59]">help each other</span> grow
+          We <span className="text-[#017A59]">help each other</span> grow
         </h1>
 
         <p className="text-center pb-[8.69rem] text-[#1D1D1F] text-[1.375rem] font-medium leading-[1.875rem] tracking-[ -0.0275rem]">

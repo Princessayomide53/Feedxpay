@@ -1,11 +1,26 @@
-import React from "react";
+import React, { useState } from "react";
 import Nav from "../../NavBar/Nav";
 import About from "../../../../Assets/About.png";
+import Products from "../../NavBar/Products";
+import Company from "../../NavBar/Company";
 
 const Header = () => {
+  const [modal, setModals] = useState(false);
+  const [openModals, setOpenModals] = useState(false);
+
+  const openModal = () => {
+    setModals(true);
+  };
+
+  const handleModal = () => {
+    setOpenModals(true);
+  };
+
   return (
     <>
-      <Nav />
+      <Nav onClick={openModal} onOpen={handleModal} />
+      {modal && <Products onHideModal={() => setModals(false)} />}
+      {openModals && <Company onHideModals={() => setOpenModals(false)} />}
       <section className="background h-[67.06rem]">
         <header className="max-w-[83rem] mx-auto flex justify-between pt-[9.5rem]">
           <div>

@@ -5,7 +5,7 @@ import Main from "./components/Layout/Main/Main";
 import Part from "./components/Layout/Part/Part";
 import Join from "./components/Layout/Join/Join";
 import Footer from "./components/Layout/Footer/Footer";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Products from "./components/Layout/NavBar/Products";
 import Company from "./components/Layout/NavBar/Company";
 // import RouterComponent from "./components/Layout/RouterComponent/RouterComponent";
@@ -14,6 +14,11 @@ import Company from "./components/Layout/NavBar/Company";
 function App() {
   const [modal, setModals] = useState(false);
   const [openModals, setOpenModals] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    return () => {};
+  }, []);
 
   const openModal = () => {
     setModals(true);
