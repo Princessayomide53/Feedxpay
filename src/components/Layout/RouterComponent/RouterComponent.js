@@ -7,6 +7,7 @@ import Home4 from "../Routes/Investments/Home4";
 import App from "../../../App";
 import DynamicHome from "../Routes/DynamicHome";
 import Home from "../Routes/AboutUs/Home";
+import Careers from "../Routes/Careers/Careers";
 
 const RouterComponent = () => {
   return (
@@ -20,6 +21,7 @@ const RouterComponent = () => {
           <Route path="/home3" element={<Home3 />} />
           <Route path="/home4" element={<Home4 />} />
           <Route path="/aboutUs" element={<Home />} />
+          <Route path="/careers" element={<Careers />} />
         </Routes>
       </Router>
     </>

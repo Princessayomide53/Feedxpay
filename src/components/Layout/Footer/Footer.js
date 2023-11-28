@@ -34,7 +34,7 @@ const Footer = () => {
               Blog
             </p>
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              Careers
+              <Link to="/careers">Careers</Link>
             </p>
           </div>
           <div className="space-y-[1.5rem]">

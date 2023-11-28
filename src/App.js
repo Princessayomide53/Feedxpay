@@ -13,6 +13,7 @@ import Company from "./components/Layout/NavBar/Company";
 
 function App() {
   const [modal, setModals] = useState(false);
+  const [openModals, setOpenModals] = useState(false);
 
   const openModal = () => {
     setModals(true);
@@ -21,11 +22,18 @@ function App() {
     setModals(false);
   };
 
+  const handleModal = () => {
+    setOpenModals(true);
+  };
+  const handleCloseModal = () => {
+    setOpenModals(false);
+  };
+
   return (
     <div>
-      <Nav onClick={openModal} />
+      <Nav onClick={openModal} onOpen={handleModal} />
       {modal && <Products onHideModal={closeModal} />}
-      {modal && <Company onHideModal={closeModal} />}
+      {openModals && <Company onHideModals={handleCloseModal} />}
       <Hero />
       <Main />
       <Part />

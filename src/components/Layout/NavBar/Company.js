@@ -1,5 +1,5 @@
 import React from "react";
-import Modal from "../../UI/Modal";
+import Modal2 from "../../UI/Modal2";
 import { Link } from "react-router-dom";
 
 const Company = (props) => {
@@ -22,7 +22,7 @@ const Company = (props) => {
   ];
 
   return (
-    <Modal onClose={props.onHideModal}>
+    <Modal2 onClose={props.onHideModals}>
       <div className="py-[0.3rem] px-[0.3rem]">
         {Products.map((data) => (
           <Link to={`/main${data.id}`}>
@@ -37,7 +37,7 @@ const Company = (props) => {
           </Link>
         ))}
       </div>
-    </Modal>
+    </Modal2>
   );
 };
 
