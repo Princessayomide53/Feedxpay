@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef, useCallback } from "react";
 import Money from "../../../Assets/Money.png";
+import Virtual from "../../../Assets/Virtual.png";
+import Invest from "../../../Assets/Invest.png";
 import "../../../App.css";
 
 const Payment = () => {
@@ -151,13 +153,42 @@ const Payment = () => {
           investing with us today.
         </p>
       </div>
-      <div>
-        <img
-          src={Money}
-          alt=""
-          className="object-cover w-[44.1875rem] h-[44.1875rem]"
-        />
-      </div>
+
+      {activeSection === "PAYMENTS" ? (
+        <div>
+          <img
+            src={Money}
+            alt=""
+            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+          />
+        </div>
+      ) : "" || activeSection === "VIRTUAL CARDS" ? (
+        <div>
+          <img
+            src={Virtual}
+            alt=""
+            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+          />
+        </div>
+      ) : "" || activeSection === "SAVINGS" ? (
+        <div>
+          <img
+            src={Invest}
+            alt=""
+            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+          />
+        </div>
+      ) : "" || activeSection === "INVESTMENTS" ? (
+        <div>
+          <img
+            src={Invest}
+            alt=""
+            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+          />
+        </div>
+      ) : (
+        ""
+      )}
     </section>
   );
 };
