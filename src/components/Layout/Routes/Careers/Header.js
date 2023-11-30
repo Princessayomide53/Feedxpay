@@ -4,10 +4,12 @@ import Careers from "../../../../Assets/Careers.png";
 import Careers1 from "../../../../Assets/Careers1.png";
 import Company from "../../NavBar/Company";
 import Products from "../../NavBar/Products";
+import Support from "../../NavBar/Support";
 
 const Header = () => {
   const [modal, setModals] = useState(false);
   const [openModals, setOpenModals] = useState(false);
+  const [supportModal, setSupportModal] = useState(false);
 
   const openModal = () => {
     setModals(true);
@@ -17,11 +19,22 @@ const Header = () => {
     setOpenModals(true);
   };
 
+  const handleSupportModal = () => {
+    setSupportModal(true);
+  };
+
   return (
     <>
-      <Nav onClick={openModal} onOpen={handleModal} />
+      <Nav
+        onClick={openModal}
+        onOpen={handleModal}
+        onSet={handleSupportModal}
+      />
       {modal && <Products onHideModal={() => setModals(false)} />}
-      {openModals && <Company onHideModals={() => setModals(false)} />}
+      {openModals && <Company onHideModals={() => setOpenModals(false)} />}
+      {supportModal && (
+        <Support onHideSupportModal={() => setSupportModal(false)} />
+      )}
       <section className="background h-[65.12rem]">
         <header className="max-w-[83rem] mx-auto flex justify-between pt-[9.5rem]">
           <div className="pt-[7.75rem]">

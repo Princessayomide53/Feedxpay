@@ -5,18 +5,38 @@ import pngwing1 from "../../../../Assets/pngwing1.png";
 import pngwing2 from "../../../../Assets/pngwing2.png";
 // import Modal from "../../../UI/Modal";
 import Products from "../../NavBar/Products";
+import Support from "../../NavBar/Support";
+import Company from "../../NavBar/Company";
 
 const Header = () => {
   const [modal, setModals] = useState(false);
+  const [openModals, setOpenModals] = useState(false);
+  const [supportModal, setSupportModal] = useState(false);
 
   const openModal = () => {
     setModals(true);
   };
 
+  const handleModal = () => {
+    setOpenModals(true);
+  };
+
+  const handleSupportModal = () => {
+    setSupportModal(true);
+  };
+
   return (
     <>
-      <Nav onClick={openModal} />
+      <Nav
+        onClick={openModal}
+        onOpen={handleModal}
+        onSet={handleSupportModal}
+      />
       {modal && <Products onHideModal={() => setModals(false)} />}
+      {openModals && <Company onHideModals={() => setOpenModals(false)} />}
+      {supportModal && (
+        <Support onHideSupportModal={() => setSupportModal(false)} />
+      )}
       <header className=" background h-[67.5625rem]">
         <div className="flex justify-around max-w-[83rem] mx-auto pt-[9.5rem]">
           <div className="pt-[12.11rem]">

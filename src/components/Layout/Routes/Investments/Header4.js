@@ -4,17 +4,38 @@ import Invests from "../../../../Assets/Invests.png";
 import pngwing1 from "../../../../Assets/pngwing1.png";
 import pngwing2 from "../../../../Assets/pngwing2.png";
 import Products from "../../NavBar/Products";
+import Company from "../../NavBar/Company";
+import Support from "../../NavBar/Support";
 
 const Header4 = () => {
   const [modal, setModals] = useState(false);
+  const [openModals, setOpenModals] = useState(false);
+  const [supportModal, setSupportModal] = useState(false);
 
   const openModal = () => {
     setModals(true);
   };
+
+  const handleModal = () => {
+    setOpenModals(true);
+  };
+
+  const handleSupportModal = () => {
+    setSupportModal(true);
+  };
+
   return (
     <>
-      <Nav onClick={openModal} />
+      <Nav
+        onClick={openModal}
+        onOpen={handleModal}
+        onSet={handleSupportModal}
+      />
       {modal && <Products onHideModal={() => setModals(false)} />}
+      {openModals && <Company onHideModals={() => setOpenModals(false)} />}
+      {supportModal && (
+        <Support onHideSupportModal={() => setSupportModal(false)} />
+      )}
 
       <section className="background h-[67.06rem]">
         <header className="max-w-[83rem] mx-auto flex justify-between pt-[9.5rem]">

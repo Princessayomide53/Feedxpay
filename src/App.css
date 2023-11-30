@@ -140,3 +140,7 @@ body {
 .shade {
   box-shadow: 0px 0px 20px 0px rgba(29, 29, 31, 0.1);
 }
+
+.shades {
+  filter: drop-shadow(0px 0px 25px rgba(1, 122, 89, 0.16));
+}

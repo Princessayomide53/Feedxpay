@@ -35,7 +35,11 @@ const Nav = (props) => {
             >
               Company <TiArrowSortedDown className="mt-1" />
             </li>
-            <li className="flex gap-1 text-[#1D1D1F] text-[1.0625rem] font-semibold leading-[1.5rem] tracking-[-0.02125rem]">
+
+            <li
+              onClick={props.onSet}
+              className="flex gap-1 cursor-pointer text-[#1D1D1F] text-[1.0625rem] font-semibold leading-[1.5rem] tracking-[-0.02125rem]"
+            >
               Support <TiArrowSortedDown className="mt-1" />
             </li>
           </ul>

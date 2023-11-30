@@ -8,12 +8,14 @@ import Footer from "./components/Layout/Footer/Footer";
 import { useState, useEffect } from "react";
 import Products from "./components/Layout/NavBar/Products";
 import Company from "./components/Layout/NavBar/Company";
+import Support from "./components/Layout/NavBar/Support";
 // import RouterComponent from "./components/Layout/RouterComponent/RouterComponent";
 // import Subscribe from "./components/Layout/Footer/Subscribe";
 
 function App() {
   const [modal, setModals] = useState(false);
   const [openModals, setOpenModals] = useState(false);
+  const [supportModal, setSupportModal] = useState(false);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,11 +36,24 @@ function App() {
     setOpenModals(false);
   };
 
+  const handleSupportModal = () => {
+    setSupportModal(true);
+  };
+
+  const handleCloseSupportModal = () => {
+    setSupportModal(false);
+  };
+
   return (
     <div>
-      <Nav onClick={openModal} onOpen={handleModal} />
+      <Nav
+        onClick={openModal}
+        onOpen={handleModal}
+        onSet={handleSupportModal}
+      />
       {modal && <Products onHideModal={closeModal} />}
       {openModals && <Company onHideModals={handleCloseModal} />}
+      {supportModal && <Support onHideSupportModal={handleCloseSupportModal} />}
       <Hero />
       <Main />
       <Part />

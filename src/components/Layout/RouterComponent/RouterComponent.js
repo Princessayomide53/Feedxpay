@@ -10,6 +10,10 @@ import DynamicCompany from "../Routes/DynamicCompany";
 import Main3 from "../Routes/Blog/Main3";
 import Main1 from "../Routes/AboutUs/Main1";
 import Main2 from "../Routes/Careers/Main2";
+import DynamicSupport from "../Routes/DynamicSupport";
+import Support1 from "../Routes/FAQs/Support1";
+import Support2 from "../Routes/Partner/Support2";
+import Support4 from "../Routes/ContactSales/Support4";
 
 const RouterComponent = () => {
   return (
@@ -18,6 +22,7 @@ const RouterComponent = () => {
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/home/:id" element={<DynamicHome />} />
+          <Route path="/support/:id" element={<DynamicSupport />} />
           <Route path="/main/:id" element={<DynamicCompany />} />
           <Route path="/home1" element={<Home1 />} />
           <Route path="/home2" element={<Home2 />} />
@@ -26,6 +31,9 @@ const RouterComponent = () => {
           <Route path="/main1" element={<Main1 />} />
           <Route path="/main2" element={<Main2 />} />
           <Route path="/main3" element={<Main3 />} />
+          <Route path="/support1" element={<Support1 />} />
+          <Route path="/support2" element={<Support2 />} />
+          <Route path="/support4" element={<Support4 />} />
         </Routes>
       </Router>
     </>

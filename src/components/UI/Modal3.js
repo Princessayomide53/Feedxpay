@@ -12,13 +12,13 @@ const Backdrop = (props) => {
 
 const Overlay = (props) => {
   return (
-    <div className="fixed top-[23vh] left-[41rem]  w-[34%] h-[23.5rem] bg-white p-[1rem] rounded-xl shadow-2xl z-40">
+    <div className="fixed top-[23vh] left-[25rem]  w-[34%] h-[30.7rem] bg-white p-[1rem] rounded-xl shadow-2xl z-40">
       <div>{props.children}</div>
     </div>
   );
 };
-const portalElements = document.getElementById("overlay");
-const Modal2 = (props) => {
+const portalElements = document.getElementById("overlay2");
+const Modal3 = (props) => {
   return (
     <>
       {ReactDOM.createPortal(
@@ -33,4 +33,4 @@ const Modal2 = (props) => {
   );
 };
 
-export default Modal2;
+export default Modal3;

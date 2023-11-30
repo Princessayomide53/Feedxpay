@@ -1,24 +1,26 @@
 import React, { useEffect } from "react";
-import Header from "./Header";
-import Main from "./Main";
 import Join from "../../Join/Join";
 import Footer from "../../Footer/Footer";
-import Easy from "./Easy";
+import Header from "./Header";
+import Patners from "../../Part/Patners";
+import Main from "./Main";
+import Input from "./Input";
 
-const Home1 = () => {
+const Support2 = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     return () => {};
   }, []);
   return (
-    <div>
+    <>
       <Header />
       <Main />
-      <Easy />
+      <Patners />
+      <Input />
       <Join />
       <Footer />
-    </div>
+    </>
   );
 };
 
-export default Home1;
+export default Support2;
