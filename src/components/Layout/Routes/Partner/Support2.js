@@ -4,7 +4,7 @@ import Footer from "../../Footer/Footer";
 import Header from "./Header";
 import Patners from "../../Part/Patners";
 import Main from "./Main";
-import Input from "./Input";
+import CustomInputs from "./CustomInputs";
 
 const Support2 = () => {
   useEffect(() => {
@@ -16,7 +16,7 @@ const Support2 = () => {
       <Header />
       <Main />
       <Patners />
-      <Input />
+      <CustomInputs />
       <Join />
       <Footer />
     </>

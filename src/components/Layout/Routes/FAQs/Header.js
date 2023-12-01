@@ -6,6 +6,7 @@ import { MdArrowForwardIos } from "react-icons/md";
 import Support from "../../NavBar/Support";
 import Company from "../../NavBar/Company";
 import Products from "../../NavBar/Products";
+import { IoIosArrowDown } from "react-icons/io";
 
 const Header = () => {
   const Questions = [
@@ -125,10 +126,13 @@ const Header = () => {
   const [openModals, setOpenModals] = useState(false);
   const [supportModal, setSupportModal] = useState(false);
   const handleOpen = (index) => {
-    const newOpen = [...open];
-    newOpen[index] = !newOpen[index];
-    setOpen(newOpen);
+    setOpen((prevOpen) => {
+      const newOpen = [...prevOpen];
+      newOpen[index] = !newOpen[index];
+      return newOpen;
+    });
   };
+
   const openModal = () => {
     setModals(true);
   };
@@ -178,12 +182,21 @@ const Header = () => {
                     <h4 className="text-[#017A59] w-[37rem] text-[1.175rem] font-semibold leading-[2rem]">
                       {quest.question}
                     </h4>
-                    <IoIosArrowUp
-                      className="text-2xl"
-                      onClick={() => {
-                        handleOpen(index);
-                      }}
-                    />
+                    {open[index] ? (
+                      <IoIosArrowUp
+                        className="text-2xl"
+                        onClick={() => {
+                          handleOpen(index);
+                        }}
+                      />
+                    ) : (
+                      <IoIosArrowDown
+                        className="text-2xl"
+                        onClick={() => {
+                          handleOpen(index);
+                        }}
+                      />
+                    )}
                   </Card>
                   {open[index] && (
                     <Card className="w-[45.875rem] mt-2 transition-all duration-300 ease-in-out h-[6.5rem] bg-white rounded-xl shadow-lg px-[1.52rem] py-[1rem] flex justify-start items-center">

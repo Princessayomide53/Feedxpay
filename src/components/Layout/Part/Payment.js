@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import Money from "../../../Assets/Money.png";
 import Virtual from "../../../Assets/Virtual.png";
 import Invest from "../../../Assets/Invest.png";
+import Saves from "../../../Assets/Saves.png";
 import "../../../App.css";
 
 const Payment = () => {
@@ -173,7 +174,7 @@ const Payment = () => {
       ) : "" || activeSection === "SAVINGS" ? (
         <div>
           <img
-            src={Invest}
+            src={Saves}
             alt=""
             className="object-cover w-[44.1875rem] h-[44.1875rem]"
           />
