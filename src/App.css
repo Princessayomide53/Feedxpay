@@ -53,7 +53,7 @@ body {
   direction: ltr;
 }
 
-@keyframes moveLogos {
+/* @keyframes moveLogos {
   0% {
     transform: translateX(0);
   }
@@ -71,7 +71,24 @@ body {
 
 .logos {
   animation: moveLogos 4s infinite linear;
+} */
+
+@keyframes moveLeft {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
 }
+
+.animate {
+  width: 300%;
+  top: 50%;
+  transform: translate(0, -50%);
+  animation: moveLeft 5s infinite linear;
+}
+
 .bgs {
   background: linear-gradient(
       273deg,

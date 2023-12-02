@@ -13,7 +13,7 @@ const OpenAccount = () => {
   const handlePassword = () => {
     setShow((prevShow) => !prevShow);
   };
-
+  const handleSubmit = () => {};
   return (
     <section className="h-[61.375rem] bg-[#EBFFF5] py-[2.38rem] flex flex-col items-center">
       <Card className="bg-white w-[37.5rem] h-[56.625rem] rounded-xl">
@@ -27,7 +27,10 @@ const OpenAccount = () => {
             Open account
           </h4>
         </article>
-        <form className="px-[5.6rem] pt-[3.12rem] space-y-[2rem]">
+        <form
+          className="px-[5.6rem] pt-[3.12rem] space-y-[2rem]"
+          onSubmit={handleSubmit}
+        >
           <div className="flex gap-[3rem]">
             <Input
               label="First Name"

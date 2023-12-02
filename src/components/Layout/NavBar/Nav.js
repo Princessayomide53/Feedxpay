@@ -45,11 +45,11 @@ const Nav = (props) => {
           </ul>
 
           <div className="flex space-x-[2rem]">
-            <p className="mt-3 text-[#1D1D1F] text-[1.0625rem] font-semibold leading-[1.5rem] tracking-[-0.02125rem]">
+            {/* <p className="mt-3 text-[#1D1D1F] text-[1.0625rem] font-semibold leading-[1.5rem] tracking-[-0.02125rem]">
               <Link to="/signIn">Sign in</Link>
-            </p>
+            </p> */}
             <button className="bg-[#017A59] text-white px-5 py-3 rounded-xl  text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
-              <Link to="/openAcct">Open an account</Link>
+              Join Our Community
             </button>
           </div>
         </div>
