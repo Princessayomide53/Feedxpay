@@ -9,6 +9,7 @@ import { useState, useEffect } from "react";
 import Products from "./components/Layout/NavBar/Products";
 import Company from "./components/Layout/NavBar/Company";
 import Support from "./components/Layout/NavBar/Support";
+// import { IoIosArrowRoundUp } from "react-icons/io";
 // import RouterComponent from "./components/Layout/RouterComponent/RouterComponent";
 // import Subscribe from "./components/Layout/Footer/Subscribe";
 
@@ -45,7 +46,7 @@ function App() {
   };
 
   return (
-    <div>
+    <div className="">
       <Nav
         onClick={openModal}
         onOpen={handleModal}
@@ -62,6 +63,9 @@ function App() {
       {/* <RouterComponent /> */}
       {/* <Subscribe /> */}
       {/* <Patners /> */}
+      {/* <div className="relative">
+        <IoIosArrowRoundUp className="absolute -top-[5rem] z-20 right-10 text-black text-lg bg-[#EBFFF5] w-14 h-14 rounded-lg" />
+      </div> */}
     </div>
   );
 }

@@ -86,7 +86,7 @@ body {
   width: 300%;
   top: 50%;
   transform: translate(0, -50%);
-  animation: moveLeft 5s infinite linear;
+  animation: moveLeft 7s infinite linear;
 }
 
 .bgs {

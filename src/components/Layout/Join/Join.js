@@ -5,7 +5,7 @@ import pngwing2 from "../../../Assets/pngwing2.png";
 
 const Join = () => {
   return (
-    <section className="bgs h-screen flex justify-around">
+    <section className="bgs h-screen flex justify-around" id="section1">
       <div className="">
         <h1 className="pb-[2rem] text-[#1D1D1F]   text-[3.1875rem] font-medium leading-[4.375rem] pt-[11.94rem]">
           Join Feedxpay <br />

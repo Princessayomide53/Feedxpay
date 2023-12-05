@@ -2,6 +2,7 @@ import React from "react";
 import Feedxpay from "../../../Assets/Feedxpay.gif";
 import pngwing1 from "../../../Assets/pngwing1.png";
 import pngwing2 from "../../../Assets/pngwing2.png";
+import { IoIosArrowRoundUp } from "react-icons/io";
 
 const Hero = () => {
   return (
@@ -40,6 +41,9 @@ const Hero = () => {
               className="object-cover w-[54.5625rem] h-[50rem]"
             />
           </div>
+        </div>
+        <div className="relative">
+          <IoIosArrowRoundUp className="fixed top-[38rem] z-20 right-10 text-black text-base bg-[#EBFFF5] w-12 h-12 rounded-lg" />
         </div>
       </div>
     </header>

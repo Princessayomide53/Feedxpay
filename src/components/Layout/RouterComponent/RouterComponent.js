@@ -16,6 +16,7 @@ import Support2 from "../Routes/Partner/Support2";
 import Support4 from "../Routes/ContactSales/Support4";
 import SignIn from "../Routes/SignIn/SignIn";
 import OpenAccount from "../Routes/OpenAcct/OpenAccount";
+import Home from "../../Business/Home";
 
 const RouterComponent = () => {
   return (
@@ -38,6 +39,7 @@ const RouterComponent = () => {
           <Route path="/support4" element={<Support4 />} />
           <Route path="/openAcct" element={<OpenAccount />} />
           <Route path="/signIn" element={<SignIn />} />
+          <Route path="/business" element={<Home />} />
         </Routes>
       </Router>
     </>

@@ -47,7 +47,7 @@ const CustomInputs = () => {
               Country
             </label>
 
-            <select className="block appearance-none w-full h-[2.75rem] px-5 py-2 border-2 border-[#E8E9EB] rounded-xl leading-5 focus:outline-none focus:border-blue-400">
+            <select className="block appearance-none mb-[2rem] w-full h-[2.75rem] px-5 py-2 border-2 border-[#E8E9EB] rounded-xl leading-5 focus:outline-none focus:border-blue-400">
               <option value="" disabled selected>
                 -- Select a Country --
               </option>
@@ -57,7 +57,7 @@ const CustomInputs = () => {
                 </option>
               ))}
             </select>
-            <div className="absolute inset-y-0 right-3 top-7 flex items-center px-2 pointer-events-none">
+            <div className="absolute inset-y-0 right-3 top-2 flex items-center px-2 pointer-events-none">
               <MdOutlineKeyboardArrowDown className="text-xl" />
             </div>
           </div>
