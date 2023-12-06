@@ -4,50 +4,54 @@ import Logo from "../../../Assets/Logo.png";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link } from "react-router-dom";
 import { HashLink as HashRouterLink } from "react-router-hash-link";
+import Individual from "../../Individual";
+import Business from "../../Business/Business";
 
 const Nav = (props) => {
-  const [tab, setTab] = useState(1);
+  const [page, setPage] = useState(true);
 
-  const handleTab = (tabs) => {
-    setTab(tabs);
-  };
+  // const handleTab = () => {
+  //   setPage(!page);
+  // };
+
   return (
     <section className="bg ">
       <nav className="fixed left-0 top-0 w-full bg h-[10.5rem] z-30">
         <div className="flex py-5 max-w-[83rem] mx-auto space-x-[5rem]">
-          <div>
-            <p
+          <Link to="/">
+            <button
               onClick={() => {
-                handleTab(1);
+                setPage(true);
               }}
               className={
-                tab === 1
+                page
                   ? "active text-[#017A59] uppercase pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
                   : "text-[#8A9099] uppercase text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
               }
             >
               For Individuals
-            </p>
-          </div>
-          {/* <div
-          className="flex flex-col items-center pt-24 gap-14 lg:mb-5  mb-8"
-          id="hash-link-projects"
-        ></div> */}
-          <div>
-            <p
+            </button>
+          </Link>
+
+          <Link to="/business">
+            {" "}
+            <button
               onClick={() => {
-                handleTab(2);
+                setPage(false);
               }}
               className={
-                tab === 2
+                !page
                   ? "active text-[#017A59] uppercase pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
                   : "text-[#8A9099] uppercase text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
               }
             >
               For Business
-            </p>
-          </div>
+            </button>
+          </Link>
+
+          {/* {page ? <Individual /> : <Business />} */}
         </div>
+
         <div className="flex justify-between max-w-[83rem] mx-auto py-[1.17rem]">
           <Link to="/">
             <img src={Logo} alt="" className="w-[14.5rem] h-[2.5rem]" />
@@ -80,14 +84,19 @@ const Nav = (props) => {
             {/* <p className="mt-3 text-[#1D1D1F] text-[1.0625rem] font-semibold leading-[1.5rem] tracking-[-0.02125rem]">
               <Link to="/signIn">Sign in</Link>
             </p> */}
-            <button className="bg-[#017A59] text-white px-5 py-3 rounded-xl  text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
-              <HashRouterLink smooth to="#section1">
+            <HashRouterLink smooth to="#section1">
+              <button className="bg-[#017A59] text-white px-5 py-3 rounded-xl  text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
                 Get Started
-              </HashRouterLink>
-            </button>
+              </button>
+            </HashRouterLink>
           </div>
         </div>
       </nav>
+      {/* <div>
+        {" "}
+        {tab === 1 && <Individual />}
+        {tab === 2 && <Business />}
+      </div> */}
     </section>
   );
 };

@@ -6,12 +6,12 @@ import Company from "../../NavBar/Company";
 import Products from "../../NavBar/Products";
 
 const Header = () => {
-  const [modal, setModals] = useState(false);
+  const [modal, setModal] = useState(false);
   const [openModals, setOpenModals] = useState(false);
   const [supportModal, setSupportModal] = useState(false);
 
   const openModal = () => {
-    setModals(true);
+    setModal(true);
   };
 
   const handleModal = () => {
@@ -29,7 +29,7 @@ const Header = () => {
         onOpen={handleModal}
         onSet={handleSupportModal}
       />
-      {modal && <Products onHideModal={() => setModals(false)} />}
+      {modal && <Products onHideModal={() => setModal(false)} />}
       {openModals && <Company onHideModals={() => setOpenModals(false)} />}
       {supportModal && (
         <Support onHideSupportModal={() => setSupportModal(false)} />

@@ -41,7 +41,10 @@ const Main = () => {
       </p>
       <div className="grid grid-cols-2 place-items-center gap-[3.25rem] pb-[6.25rem]">
         {main.map((list) => (
-          <Card className="w-[36rem] h-[22.375rem] rounded-md shade p-[1.25rem]">
+          <Card
+            key={list.id}
+            className="w-[36rem] h-[22.375rem] rounded-md shade p-[1.25rem]"
+          >
             <h4 className="text-[#017A5966] pb-[2.37rem] text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem]">
               {list.num}
             </h4>

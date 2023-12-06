@@ -1,7 +1,7 @@
 import React from "react";
 import Nav from "../Layout/NavBar/Nav";
 
-const Home = () => {
+const Business = () => {
   return (
     <div>
       <Nav />
@@ -9,4 +9,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Business;

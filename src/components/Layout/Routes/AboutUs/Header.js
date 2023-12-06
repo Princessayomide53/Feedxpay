@@ -6,12 +6,12 @@ import Company from "../../NavBar/Company";
 import Support from "../../NavBar/Support";
 
 const Header = () => {
-  const [modal, setModals] = useState(false);
+  const [modal, setModal] = useState(false);
   const [openModals, setOpenModals] = useState(false);
   const [supportModal, setSupportModal] = useState(false);
 
   const openModal = () => {
-    setModals(true);
+    setModal(true);
   };
 
   const handleModal = () => {
@@ -29,7 +29,7 @@ const Header = () => {
         onOpen={handleModal}
         onSet={handleSupportModal}
       />
-      {modal && <Products onHideModal={() => setModals(false)} />}
+      {modal && <Products onHideModal={() => setModal(false)} />}
       {openModals && <Company onHideModals={() => setOpenModals(false)} />}
       {supportModal && (
         <Support onHideSupportModal={() => setSupportModal(false)} />
@@ -50,13 +50,13 @@ const Header = () => {
               compliance, we empower individuals and businesses <br />
               to thrive in an interconnected world.
               <br />
-              <p className="pt-5">
-                Our team of experts are dedicated to providing <br /> tailored
-                solutions that drive growth and success.
-                <br />
-                Partner with FeedXPay and transcend boundaries in <br /> the
-                world of finance.
-              </p>
+            </p>
+            <p className="pt-5">
+              Our team of experts are dedicated to providing <br /> tailored
+              solutions that drive growth and success.
+              <br />
+              Partner with FeedXPay and transcend boundaries in <br /> the world
+              of finance.
             </p>
           </div>
           <div className="pt-[6.25rem]">

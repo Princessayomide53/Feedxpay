@@ -31,7 +31,7 @@ const Easy = () => {
       </h1>
       <div className="flex justify-between pb-[10.94rem]">
         {method.map((item) => (
-          <div>
+          <div key={item.id}>
             <Card className="w-[3.125rem] h-[3.125rem] bg-[#EBFFF5] mb-[2rem] rounded-xl py-2">
               <p className="text-center text-[#017A59] font-semibold text-[1.5rem] leading-[2.3125rem] tracking-[-0.03rem]">
                 {item.num}

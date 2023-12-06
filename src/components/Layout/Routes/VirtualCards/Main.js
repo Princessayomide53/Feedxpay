@@ -31,7 +31,7 @@ const Main = () => {
       </h1>
       <div className="flex justify-between pb-[9.75rem]">
         {steps.map((item) => (
-          <div>
+          <div key={item.id}>
             <Card className=" flex justify-start mb-[2rem] rounded-xl ">
               <p className="text-center text-[#017A59] opacity-40 font-bold text-[2.875rem] leading-[3.875rem] tracking-[-0.0575rem]">
                 {item.num}

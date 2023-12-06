@@ -47,8 +47,11 @@ const CustomInputs = () => {
               Country
             </label>
 
-            <select className="block appearance-none mb-[2rem] w-full h-[2.75rem] px-5 py-2 border-2 border-[#E8E9EB] rounded-xl leading-5 focus:outline-none focus:border-blue-400">
-              <option value="" disabled selected>
+            <select
+              defaultValue=" -- Select a Country --"
+              className="block appearance-none mb-[2rem] w-full h-[2.75rem] px-5 py-2 border-2 border-[#E8E9EB] rounded-xl leading-5 focus:outline-none focus:border-blue-400"
+            >
+              <option value=" -- Select a Country --" disabled>
                 -- Select a Country --
               </option>
               {Country.getAllCountries().map((items) => (

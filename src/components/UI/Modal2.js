@@ -12,7 +12,7 @@ const Backdrop = (props) => {
 
 const Overlay = (props) => {
   return (
-    <div className="fixed top-[23vh] left-[41rem]  w-[34%] h-[23.5rem] bg-white p-[1rem] rounded-xl shadow-2xl z-40">
+    <div className="fixed top-[23vh] left-[44.5rem]  w-[34%] h-[23.5rem] bg-white p-[1rem] rounded-xl shadow-2xl z-40">
       <div>{props.children}</div>
     </div>
   );

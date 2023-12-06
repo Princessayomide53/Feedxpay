@@ -42,7 +42,10 @@ const Blog = () => {
         </h1>
         <div className="flex flex-col justify-center items-center space-y-[6.25rem]">
           {blog.map((blx) => (
-            <Card className="h-[35.625rem] w-[71.5rem] bg-white rounded-3xl shadow-lg flex justify-between">
+            <Card
+              key={blx.id}
+              className="h-[35.625rem] w-[71.5rem] bg-white rounded-3xl shadow-lg flex justify-between"
+            >
               <div>
                 <img
                   src={blx.image}

@@ -16,14 +16,15 @@ import Support2 from "../Routes/Partner/Support2";
 import Support4 from "../Routes/ContactSales/Support4";
 import SignIn from "../Routes/SignIn/SignIn";
 import OpenAccount from "../Routes/OpenAcct/OpenAccount";
-import Home from "../../Business/Home";
+import Business from "../../Business/Business";
+import Individual from "../../Individual";
 
 const RouterComponent = () => {
   return (
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<App />} />
+          <Route path="/" element={<Individual />} />
           <Route path="/home/:id" element={<DynamicHome />} />
           <Route path="/support/:id" element={<DynamicSupport />} />
           <Route path="/main/:id" element={<DynamicCompany />} />
@@ -39,7 +40,7 @@ const RouterComponent = () => {
           <Route path="/support4" element={<Support4 />} />
           <Route path="/openAcct" element={<OpenAccount />} />
           <Route path="/signIn" element={<SignIn />} />
-          <Route path="/business" element={<Home />} />
+          <Route path="/business" element={<Business />} />
         </Routes>
       </Router>
     </>

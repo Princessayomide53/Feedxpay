@@ -10,7 +10,7 @@ const Subscribe = () => {
       <div className="pt-[0.5rem] pb-[1.5rem] flex gap-[1.81rem]">
         <input
           type="text"
-          className="w-[22rem] h-[3.6875rem] rounded-2xl pl-7"
+          className="w-[22rem] h-[3.6875rem] rounded-2xl pl-7 focus:outline-blue-400"
           placeholder="Add your email Address"
         />
         <IoArrowForwardCircle className="text-white text-5xl mt-3" />

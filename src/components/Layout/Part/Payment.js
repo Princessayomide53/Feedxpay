@@ -23,6 +23,7 @@ const Payment = () => {
 
       animateLine(line, lineStartPosition, lineEndPosition);
     }
+    // console.log("rerender4");
   }, []);
 
   const animateLine = (line, startPosition, endPosition) => {
@@ -47,11 +48,13 @@ const Payment = () => {
     };
 
     requestAnimationFrame(moveLine);
+    // console.log("rerender3");
   };
 
   useEffect(() => {
     handleSection("PAYMENTS");
     setInitialRender(false);
+    // console.log("rerender1");
   }, [handleSection]);
 
   useEffect(() => {
@@ -72,7 +75,7 @@ const Payment = () => {
         activeSectionRef.current = newActiveSection;
       }
     };
-
+    // console.log("rerender2");
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -84,7 +87,7 @@ const Payment = () => {
       <div className="line-container">
         <div
           className={`${"border-l-2 border-[#017a59] h-[10.875rem] transition-all duration-300"} line`}
-          style={{ top: `calc(${linePosition}px - 4.38rem)` }}
+          // style={{ top: `calc(${linePosition}px - 4.38rem)` }}
         ></div>
       </div>
       <div className="pt-[5.69rem] cursor-pointer">

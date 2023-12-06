@@ -31,7 +31,7 @@ const Team = () => {
           </p>
         </div>
       </div>
-      <div className="flex  justify-between pt-[4.88rem] pb-[11.87rem] overflow-hidden">
+      <div className="flex justify-between pt-[4.88rem] pb-[11.87rem] overflow-hidden">
         <div className="relative">
           <img src={faruk} alt="" />
           <Card className="bg-[#017A59] px-[1rem] py-[0.69rem] w-[29.5625rem] h-[5.125rem] absolute top-[25rem] left-0 rounded-br-xl rounded-bl-xl">

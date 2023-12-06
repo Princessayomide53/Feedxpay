@@ -89,6 +89,18 @@ body {
   animation: moveLeft 7s infinite linear;
 }
 
+.active-link {
+  color: #017a59;
+  border-bottom: 3px solid #017a59;
+  text-transform: uppercase;
+  font-size: 1rem;
+  cursor: pointer;
+  padding-bottom: 8px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.02rem;
+}
+
 .bgs {
   background: linear-gradient(
       273deg,
