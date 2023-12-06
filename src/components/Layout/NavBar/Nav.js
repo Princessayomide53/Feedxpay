@@ -1,18 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../../App.css";
 import Logo from "../../../Assets/Logo.png";
 import { TiArrowSortedDown } from "react-icons/ti";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HashLink as HashRouterLink } from "react-router-hash-link";
-import Individual from "../../Individual";
-import Business from "../../Business/Business";
 
 const Nav = (props) => {
-  const [page, setPage] = useState(true);
-
-  // const handleTab = () => {
-  //   setPage(!page);
-  // };
+  const location = useLocation();
 
   return (
     <section className="bg ">
@@ -20,11 +14,8 @@ const Nav = (props) => {
         <div className="flex py-5 max-w-[83rem] mx-auto space-x-[5rem]">
           <Link to="/">
             <button
-              onClick={() => {
-                setPage(true);
-              }}
               className={
-                page
+                location.pathname === "/"
                   ? "active text-[#017A59] uppercase pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
                   : "text-[#8A9099] uppercase text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
               }
@@ -36,11 +27,8 @@ const Nav = (props) => {
           <Link to="/business">
             {" "}
             <button
-              onClick={() => {
-                setPage(false);
-              }}
               className={
-                !page
+                location.pathname === "/business"
                   ? "active text-[#017A59] uppercase pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
                   : "text-[#8A9099] uppercase text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
               }
@@ -48,8 +36,6 @@ const Nav = (props) => {
               For Business
             </button>
           </Link>
-
-          {/* {page ? <Individual /> : <Business />} */}
         </div>
 
         <div className="flex justify-between max-w-[83rem] mx-auto py-[1.17rem]">
@@ -92,11 +78,6 @@ const Nav = (props) => {
           </div>
         </div>
       </nav>
-      {/* <div>
-        {" "}
-        {tab === 1 && <Individual />}
-        {tab === 2 && <Business />}
-      </div> */}
     </section>
   );
 };
