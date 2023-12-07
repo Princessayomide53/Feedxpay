@@ -54,7 +54,7 @@ const Header = () => {
             </button>{" "}
           </div>{" "}
           <div className="relative">
-            <Card className="absolute -top-[8.5rem] p-[2.5rem] backdrop-blur-lg left-1/2 transform -translate-x-1/2 w-[48.8125rem] h-[10.625rem] rounded-lg bg-[#EBFFF5] bg-opacity-50">
+            <Card className="absolute -top-[7.5rem] p-[2.5rem] backdrop-blur-lg left-1/2 transform -translate-x-1/2 w-[48.8125rem] h-[10.625rem] rounded-lg bg-[#EBFFF5] bg-opacity-50">
               <div className="flex justify-between">
                 <p className=" text-[#017A59] text-[1.125rem] font-medium leading-[1.5rem]">
                   Telephone:{" "}

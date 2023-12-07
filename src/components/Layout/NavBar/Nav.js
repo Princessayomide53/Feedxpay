@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import "../../../App.css";
 import Logo from "../../../Assets/Logo.png";
 import { TiArrowSortedDown } from "react-icons/ti";
@@ -15,7 +15,7 @@ const Nav = (props) => {
           <Link to="/individual">
             <button
               className={
-                location.pathname === "/individual" ||
+                location.pathname === "/" ||
                 location.pathname.startsWith("/home/") ||
                 location.pathname.startsWith("/main/") ||
                 location.pathname.startsWith("/support/")

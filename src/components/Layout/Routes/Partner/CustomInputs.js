@@ -27,7 +27,7 @@ const CustomInputs = () => {
 
             <Input
               type="text"
-              label="First Name"
+              label="Last Name"
               className="w-[18.125rem] h-[3.75rem] border-2 border-[#E8E9EB] rounded-xl  focus:outline-blue-400"
             />
           </div>
