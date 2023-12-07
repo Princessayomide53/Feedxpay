@@ -30,7 +30,7 @@ const Products = (props) => {
     <Modal onClose={props.onHideModal}>
       <div className="py-[0.3rem] px-[0.3rem]">
         {Products.map((data) => (
-          <Link to={`/home${data.id}`} key={data.id}>
+          <Link to={`/home/${data.id}`} key={data.id}>
             <div className="bg-text py-4 px-2">
               <h1 className="pb-[0.2rem] text-[#1D1D1F] text-[1.375rem] font-semibold leading-[2rem]">
                 {data.name}

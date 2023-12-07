@@ -41,6 +41,7 @@ const Individual = () => {
   const handleCloseSupportModal = () => {
     setSupportModal(false);
   };
+
   return (
     <div>
       <Nav

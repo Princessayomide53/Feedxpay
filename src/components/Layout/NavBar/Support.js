@@ -30,7 +30,7 @@ const Support = (props) => {
     <Modal3 onClose={props.onHideSupportModal}>
       <div className="py-[0.3rem] px-[0.3rem]">
         {support.map((data) => (
-          <Link to={`/support${data.id}`} key={data.id}>
+          <Link to={`/support/${data.id}`} key={data.id}>
             <div className="bg-text py-4 px-2">
               <h1 className="pb-[0.2rem] text-[#1D1D1F] text-[1.375rem] font-semibold leading-[2rem]">
                 {data.name}

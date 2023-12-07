@@ -1,10 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Feedxpay from "../../../Assets/Feedxpay.gif";
 import pngwing1 from "../../../Assets/pngwing1.png";
 import pngwing2 from "../../../Assets/pngwing2.png";
 import { IoIosArrowRoundUp } from "react-icons/io";
 
 const Hero = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        document.documentElement.scrollTop || document.body.scrollTop;
+      setIsVisible(scrollTop > 500);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <header className="background">
       <div className=" h-[61.06rem] w-full max-w-[83rem] mx-auto pt-[9rem]">
@@ -42,9 +63,15 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="relative">
-          <IoIosArrowRoundUp className="fixed top-[38rem] z-20 right-10 text-black text-base bg-[#EBFFF5] w-12 h-12 rounded-lg" />
-        </div>
+
+        {isVisible && (
+          <div className="relative">
+            <IoIosArrowRoundUp
+              onClick={scrollToTop}
+              className="fixed cursor-pointer top-[38rem] z-20 right-10 text-black text-base bg-[#EBFFF5] w-12 h-12 rounded-lg"
+            />
+          </div>
+        )}
       </div>
     </header>
   );

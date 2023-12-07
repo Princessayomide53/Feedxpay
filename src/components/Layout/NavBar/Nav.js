@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "../../../App.css";
 import Logo from "../../../Assets/Logo.png";
 import { TiArrowSortedDown } from "react-icons/ti";
@@ -9,13 +9,16 @@ const Nav = (props) => {
   const location = useLocation();
 
   return (
-    <section className="bg ">
+    <section className="bg">
       <nav className="fixed left-0 top-0 w-full bg h-[10.5rem] z-30">
         <div className="flex py-5 max-w-[83rem] mx-auto space-x-[5rem]">
-          <Link to="/">
+          <Link to="/individual">
             <button
               className={
-                location.pathname === "/"
+                location.pathname === "/individual" ||
+                location.pathname.startsWith("/home/") ||
+                location.pathname.startsWith("/main/") ||
+                location.pathname.startsWith("/support/")
                   ? "active text-[#017A59] uppercase pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
                   : "text-[#8A9099] uppercase text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
               }
@@ -25,7 +28,6 @@ const Nav = (props) => {
           </Link>
 
           <Link to="/business">
-            {" "}
             <button
               className={
                 location.pathname === "/business"

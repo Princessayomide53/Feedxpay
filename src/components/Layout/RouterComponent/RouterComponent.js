@@ -24,20 +24,21 @@ const RouterComponent = () => {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Individual />} />
+          <Route path="/" element={<App />} />
+          <Route path="/individual" element={<Individual />} />
           <Route path="/home/:id" element={<DynamicHome />} />
           <Route path="/support/:id" element={<DynamicSupport />} />
           <Route path="/main/:id" element={<DynamicCompany />} />
-          <Route path="/home1" element={<Home1 />} />
-          <Route path="/home2" element={<Home2 />} />
-          <Route path="/home3" element={<Home3 />} />
-          <Route path="/home4" element={<Home4 />} />
-          <Route path="/main1" element={<Main1 />} />
-          <Route path="/main2" element={<Main2 />} />
-          <Route path="/main3" element={<Main3 />} />
-          <Route path="/support1" element={<Support1 />} />
-          <Route path="/support2" element={<Support2 />} />
-          <Route path="/support4" element={<Support4 />} />
+          <Route path="/home/1" element={<Home1 />} />
+          <Route path="/home/2" element={<Home2 />} />
+          <Route path="/home/3" element={<Home3 />} />
+          <Route path="/home/4" element={<Home4 />} />
+          <Route path="/main/1" element={<Main1 />} />
+          <Route path="/main/2" element={<Main2 />} />
+          <Route path="/main/3" element={<Main3 />} />
+          <Route path="/support/1" element={<Support1 />} />
+          <Route path="/support/2" element={<Support2 />} />
+          <Route path="/support/4" element={<Support4 />} />
           <Route path="/openAcct" element={<OpenAccount />} />
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/business" element={<Business />} />

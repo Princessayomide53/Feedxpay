@@ -7,19 +7,18 @@ import App from "../../../App";
 import { useParams } from "react-router-dom";
 
 const DynamicHome = () => {
-  const { id } = useParams();
+  const { homeId } = useParams();
 
   // Render Home1 or Home2 based on the id parameter
-  if (id === "1") {
+  if (homeId === "1") {
     return <Home1 />;
-  } else if (id === "2") {
+  } else if (homeId === "2") {
     return <Home2 />;
-  } else if (id === "3") {
+  } else if (homeId === "3") {
     return <Home3 />;
-  } else if (id === "4") {
+  } else if (homeId === "4") {
     return <Home4 />;
   } else {
-    // Handle other cases or provide a default component
     return <App />;
   }
 };
