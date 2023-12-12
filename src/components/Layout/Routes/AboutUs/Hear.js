@@ -4,7 +4,7 @@ import cto from "../../../../Assets/cto.png";
 
 const Hear = () => {
   return (
-    <section className="bgs h-screen">
+    <section className="bgs h-[50.3125rem]">
       <div className="max-w-[83rem] mx-auto py-[6.25rem]">
         <h1 className="text-[#1D1D1F] text-center text-[2rem] font-bold leading-[3rem] capitalize">
           hear from our{" "}
@@ -14,7 +14,7 @@ const Hear = () => {
         <p className="leading-[2.125rem] text-[#8A9099] text-center pt-[0.5rem] font-medium text-[1.375rem]">
           know about Feedxpay from the big horns
         </p>
-        <div className="pt-[4.81rem] flex justify-between">
+        <div className="pt-[4.81rem] flex space-x-[4.12rem] justify-center">
           <div>
             <img
               src={ceo}

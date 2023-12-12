@@ -34,8 +34,8 @@ const Header = () => {
       {supportModal && (
         <Support onHideSupportModal={() => setSupportModal(false)} />
       )}
-      <section className="background h-[67.06rem]">
-        <header className="max-w-[83rem] mx-auto flex justify-between pt-[9.5rem]">
+      <section className="background h-[62.06rem]">
+        <header className="max-w-[83rem] mx-auto flex justify-around pt-[9.5rem]">
           <div>
             <h1 className="text-[#017A59] pt-[7.87rem] text-[1.5rem] font-semibold leading-[2.3125rem] tracking-[-0.03rem]">
               About us
@@ -51,7 +51,7 @@ const Header = () => {
               to thrive in an interconnected world.
               <br />
             </p>
-            <p className="pt-5">
+            <p className="pt-5 text-[#1D1D1F]  text-[1.375rem] font-medium leading-[2.125rem]">
               Our team of experts are dedicated to providing <br /> tailored
               solutions that drive growth and success.
               <br />

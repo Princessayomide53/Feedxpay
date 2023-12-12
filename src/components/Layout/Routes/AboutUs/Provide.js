@@ -29,7 +29,7 @@ const Provide = () => {
     },
   ];
   return (
-    <section className="max-w-[83rem] mx-auto flex justify-between">
+    <section className="max-w-[83rem] mx-auto flex justify-evenly">
       <div className="flex flex-col justify-center pt-[0.5rem] ">
         <h1 className="uppercase text-[#017A59] text-[1.5rem] pt-[6.25rem] font-semibold leading-[2.3125rem] tracking-[-0.03rem]">
           What we provide

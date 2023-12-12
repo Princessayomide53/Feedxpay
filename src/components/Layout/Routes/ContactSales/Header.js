@@ -5,6 +5,7 @@ import Support from "../../NavBar/Support";
 import Products from "../../NavBar/Products";
 import Company from "../../NavBar/Company";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [modal, setModal] = useState(false);
@@ -49,9 +50,11 @@ const Header = () => {
               <br />
               revenue, add value and expand your business.
             </p>
-            <button className="mt-[4.56rem]  px-7 py-3 rounded-lg bg-[#017A59] text-white text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
-              Read FAQs
-            </button>{" "}
+            <Link to="/support/1">
+              <button className="mt-[4.56rem]  px-7 py-3 rounded-lg bg-[#017A59] text-white text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
+                Read FAQs
+              </button>
+            </Link>{" "}
           </div>{" "}
           <div className="relative">
             <Card className="absolute -top-[7.5rem] p-[2.5rem] backdrop-blur-lg left-1/2 transform -translate-x-1/2 w-[48.8125rem] h-[10.625rem] rounded-lg bg-[#EBFFF5] bg-opacity-50">

@@ -12,7 +12,7 @@ const Nav = (props) => {
     <section className="bg">
       <nav className="fixed left-0 top-0 w-full bg h-[10.5rem] z-30">
         <div className="flex py-5 max-w-[83rem] mx-auto space-x-[5rem]">
-          <Link to="/individual">
+          <Link to="/">
             <button
               className={
                 location.pathname === "/" ||

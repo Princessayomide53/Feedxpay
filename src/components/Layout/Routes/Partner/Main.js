@@ -29,9 +29,9 @@ const Main = () => {
     },
   ];
   return (
-    <section className="max-w-[83rem] mx-auto">
+    <section className="max-w-[75rem] mx-auto">
       <h1 className="pt-[6.25rem] text-[#1D1D1F] text-center text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem]">
-        <span className="text-[#017A59]">Why</span> become Our Partner
+        <span className="text-[#017A59]">Why</span> become our partner
       </h1>
 
       <p className="pt-[1.28rem] text-center pb-[8.69rem] text-[#1D1D1F] text-[1.375rem] font-medium leading-[1.875rem] tracking-[-0.0275rem]">
@@ -39,7 +39,7 @@ const Main = () => {
         making important decision that as to do with work, relationship, <br />
         customer centricity and everything that is critical to our business.
       </p>
-      <div className="grid grid-cols-2 place-items-center gap-[3.25rem] pb-[6.25rem]">
+      <div className="grid grid-cols-2 place-items-center gap-[2.25rem] pb-[6.25rem]">
         {main.map((list) => (
           <Card
             key={list.id}

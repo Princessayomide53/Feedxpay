@@ -27,31 +27,35 @@ const Footer = () => {
             </p>
 
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              <Link to="/aboutUs"> About US</Link>
+              <Link to="/main/1"> About US</Link>
             </p>
 
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
               Blog
             </p>
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              <Link to="/careers">Careers</Link>
+              <Link to="/main/2">Careers</Link>
             </p>
           </div>
           <div className="space-y-[1.5rem]">
             <p className="text-[1.375rem] font-semibold from leading-[2rem]">
               Product
             </p>
+
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              Make Savings
+              <Link to="/home/1"> Make Savings</Link>
             </p>
+
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              Investments
+              <Link to="/home/4"> Investments</Link>
             </p>
+
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              Cards
+              <Link to="/home/2">Cards</Link>
             </p>
+
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              Savings
+              <Link to="/home/3"> Savings </Link>
             </p>
           </div>
           <div className="space-y-[1.5rem]">
@@ -59,17 +63,16 @@ const Footer = () => {
               Support
             </p>
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              contact sales
+              <Link to="/support/4">contact sales</Link>
             </p>
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              {" "}
-              FAQs
+              <Link to="/support/1">FAQs</Link>
             </p>
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
               Community
             </p>
             <p className="text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-              Become Patners
+              <Link to="/support/2"> Become Patners</Link>
             </p>
           </div>
           <div className="space-y-[1.5rem]">

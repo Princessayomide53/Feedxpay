@@ -6,7 +6,7 @@ import Card from "../../../UI/Card";
 
 const Team = () => {
   return (
-    <section className="max-w-[83rem] mx-auto">
+    <section className="max-w-[73rem] mx-auto">
       <h2 className=" uppercase pt-[6.25rem] text-[#017A59] text-[1.5rem] font-semibold leading-[2.3125rem] tracking-[-0.03rem]">
         Our Team
       </h2>
@@ -31,10 +31,10 @@ const Team = () => {
           </p>
         </div>
       </div>
-      <div className="flex justify-between pt-[4.88rem] pb-[11.87rem] overflow-hidden">
+      <div className="flex space-x-[1.5rem]  justify-center pt-[4.88rem] pb-[11.87rem] overflow-hidden">
         <div className="relative">
           <img src={faruk} alt="" />
-          <Card className="bg-[#017A59] px-[1rem] py-[0.69rem] w-[29.5625rem] h-[5.125rem] absolute top-[25rem] left-0 rounded-br-xl rounded-bl-xl">
+          <Card className="bg-[#017A59] px-[1rem] py-[0.69rem] w-[28.652rem] h-[5.125rem] absolute top-[25rem] left-0 rounded-br-xl rounded-bl-xl">
             <h5 className="text-white capitalize text-[1.5rem] font-semibold leading-[2.3125rem] tracking-[-0.03rem]">
               Rufai Faruk
             </h5>
@@ -45,7 +45,7 @@ const Team = () => {
         </div>
         <div className="relative">
           <img src={Tofunmi} alt="" />
-          <Card className="bg-[#017A59] px-[1rem] py-[0.69rem] w-[29.5625rem] h-[5.125rem] absolute top-[25rem] left-0 rounded-br-xl rounded-bl-xl">
+          <Card className="bg-[#017A59] px-[1rem] py-[0.69rem] w-[28.652rem] h-[5.125rem] absolute top-[25rem] left-0 rounded-br-xl rounded-bl-xl">
             <h5 className="text-white capitalize text-[1.5rem] font-semibold leading-[2.3125rem] tracking-[-0.03rem]">
               Okedeji Tofunmi
             </h5>

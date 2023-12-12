@@ -6,7 +6,10 @@ import { Country, State, City } from "country-state-city";
 
 const CustomInputs = () => {
   return (
-    <section className="bgs h-[90.1875rem] flex justify-center pt-[6.25rem] ">
+    <section
+      className="bgs h-[90.1875rem] flex justify-center pt-[6.25rem] "
+      id="section2"
+    >
       <Card className="h-[73.9375rem] shade w-[50.125rem] bg-white rounded-2xl">
         <h1 className="pt-[4.81rem] text-center text-[#1D1D1F] text-[2rem] font-bold leading-[3rem] ">
           Apply to become Feedxpay partner

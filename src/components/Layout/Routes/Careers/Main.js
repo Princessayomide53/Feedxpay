@@ -43,7 +43,7 @@ const Main = () => {
   ];
   return (
     <section>
-      <main className="pt-[6.25rem] max-w-[83rem] mx-auto">
+      <main className="pt-[6.25rem] max-w-[75rem] mx-auto">
         <h1 className="text-center text-[#1D1D1F] text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem] pb-[1.8rem]">
           We <span className="text-[#017A59]">help each other</span> grow
         </h1>
@@ -54,7 +54,7 @@ const Main = () => {
           <br />
           customer centricity and everything that is critical to our business.
         </p>
-        <div className="grid grid-cols-2 gap-[3.25rem] pb-[7rem]">
+        <div className="grid grid-cols-2 gap-[3.05rem] pb-[7rem]">
           {grow.map((call) => (
             <Card
               className="w-[36rem] h-[22.375rem] rounded-lg shade p-7"

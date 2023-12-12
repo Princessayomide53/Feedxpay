@@ -4,6 +4,7 @@ import Partner from "../../../../Assets/Partner.png";
 import Support from "../../NavBar/Support";
 import Company from "../../NavBar/Company";
 import Products from "../../NavBar/Products";
+import { HashLink as HashRouterLink } from "react-router-hash-link";
 
 const Header = () => {
   const [modal, setModal] = useState(false);
@@ -48,9 +49,11 @@ const Header = () => {
               Collaborate with us today and start generating more <br />
               revenue, add value and expand your business.
             </p>
-            <button className="mt-[4.56rem]  px-7 py-3 rounded-lg bg-[#017A59] text-white text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
-              Become a Partner
-            </button>{" "}
+            <HashRouterLink smooth to="#section2">
+              <button className="mt-[4.56rem]  px-7 py-3 rounded-lg bg-[#017A59] text-white text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
+                Become a Partner
+              </button>
+            </HashRouterLink>
           </div>{" "}
         </header>
       </section>

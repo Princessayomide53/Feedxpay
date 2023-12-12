@@ -158,7 +158,7 @@ const Header = () => {
         <Support onHideSupportModal={() => setSupportModal(false)} />
       )}
       <section className="background h-[227.81rem]">
-        <header className="max-w-[83rem] mx-auto flex justify-between mt-[8.5rem]">
+        <header className="max-w-[83rem] mx-auto flex justify-evenly mt-[8.5rem]">
           <Card className="mt-[19.25rem] rounded-lg gap-[6.25rem] w-[17.25rem] flex h-[8rem] shades bg-white px-[2rem] py-[3rem]">
             <p className="text-[#017A59]  text-[1.375rem] font-semibold leading-[2rem]">
               General
