@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "../../../UI/Card";
 import { IoIosArrowUp } from "react-icons/io";
+import { Link } from "react-router-dom";
 
 const Frequent = () => {
   const Interest = [
@@ -46,9 +47,11 @@ const Frequent = () => {
           <br />
           not answered here, kindly contact sales.
         </p>
-        <button className="bg-[#017A59] mt-[5.88rem] text-white leading-[2rem] text-[1.275rem] px-5 py-[10px] rounded-xl">
-          Contact sales
-        </button>
+        <Link to="/support/4">
+          <button className="bg-[#017A59] mt-[5.88rem] text-white leading-[2rem] text-[1.275rem] px-5 py-[10px] rounded-xl">
+            Contact sales
+          </button>
+        </Link>
       </div>
       <div className="flex flex-col space-y-[3.25rem] pt-[6.25rem] pb-[7rem] ">
         {Interest.map((item) => (

@@ -7,7 +7,7 @@ const Provide = () => {
       id: 1,
       num: "01",
       name: "Cross-border Payment",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Connect with the world effortlessly. Our Cross-Border Payment solution provides you with the tools to send and receive funds internationally.",
     },
     {
       id: 2,
@@ -19,13 +19,13 @@ const Provide = () => {
       id: 3,
       num: "03",
       name: "Breaking Boundaries",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "We break down the barriers hindering you from enjoying exemplary business and personal financial transactions.",
     },
     {
       id: 4,
       num: "04",
       name: "Trusted Financial Services",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Our commitment to being a Trusted Financial Service provider goes beyond transactions – it's about building a relationship founded on trust, security, and empowerment.",
     },
   ];
   return (

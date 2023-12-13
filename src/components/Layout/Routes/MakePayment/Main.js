@@ -11,25 +11,25 @@ const Main = () => {
       id: 1,
       img: check2,
       name: "Instant transfer",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Our platform is designed to provide you with the fastest means of  transferring money both locally and internationally in the quickest time possible.",
     },
     {
       id: 2,
       img: transfer,
       name: "Low Tranfer fee",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Our low transfer fees are designed to offer you significant savings on transactions compared to traditional financial services.",
     },
     {
       id: 3,
       img: wallet,
       name: "Transparent Exchange Rate",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Access real-time exchange rates that reflect the current market conditions. No hidden charges or mark ups on your currency exchange.",
     },
     {
       id: 4,
       img: guard,
       name: "Safe & Secure Transactions",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "We employ advanced encryption technology to safeguard your personal and financial information, ensuring that it remains confidential and secure.",
     },
   ];
   return (

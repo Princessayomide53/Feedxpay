@@ -7,25 +7,25 @@ const Interest = () => {
       id: 1,
       num: "01",
       name: "Attractive ROI",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "One of the many things that distinguish us from others, is our ROI. We offer juicy returns on our investment plans depending on the period you are investing for.",
     },
     {
       id: 2,
       num: "02",
       name: "Access to Resources",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "We allow our customers full access to our investment resources; blog posts and FAQs so as to give better clarity on everything regarding investment.",
     },
     {
       id: 3,
       num: "03",
       name: "Historical Performance",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Feedxpay has a track record of good historical performance. We have  been able to deliver best services under various market conditions.",
     },
     {
       id: 4,
       num: "04",
       name: "Cost and Fees",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "We operate a transparent payment platform. All cost and fees associated with our investment plans are not hidden.",
     },
   ];
   return (
@@ -37,11 +37,10 @@ const Interest = () => {
           interest at heart
         </h1>
         <p className="text-[#8A9099] pt-[0.2rem] text-[1.375rem] font-medium leading-[2.125rem]">
-          Benefits of saving are numerous, this is
+          We endeavor to put the interest of our
           <br />
-          to give you insights as to why you should
-          <br />
-          start saving today.
+          customers at the core of our decision <br />
+          making.
         </p>
       </div>
       <div className="grid grid-cols-2 gap-[1.88rem] pt-[12.06rem] pb-[7rem] place-content-start justify-start text-start items-start">

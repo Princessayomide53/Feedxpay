@@ -7,19 +7,19 @@ const Easy = () => {
       id: 1,
       num: 1,
       name: "Select Payment Method",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Making payments has never been this easy. The first step is the select your preferred method of payments.",
     },
     {
       id: 2,
       num: 2,
       name: "Complete Details Input",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Input all details and required fields including amount, destination, currency, narration and others.",
     },
     {
       id: 3,
       num: 3,
       name: "Preview Details and Send",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Preview and confirm all filled details to avoid mistakes, and then you can click send.",
     },
   ];
   return (

@@ -17,18 +17,19 @@ const Team = () => {
         </p>
         <div>
           <p className="text-[#1D1D1F] text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
-            We are a team of individuals from different educational background
-            <br />
-            working together with the goal of building a new and better future
-            of
-            <br />
-            successful and permission-less entrepreneurship for everyone.
+            At FeedXPay, our success is built on the foundation of a dedicated
+            and
+            <br /> diverse team of professionals who share a passion for
+            innovation,
+            <br /> excellence, and a commitment to redefining the future of
+            financial
+            <br /> services.
           </p>
-          <p className="pt-[1rem] text-[#1D1D1F] text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
+          {/* <p className="pt-[1rem] text-[#1D1D1F] text-[1.0625rem] font-medium leading-[1.5rem] tracking-[-0.02125rem]">
             {" "}
             If you run a business or ever decide to do so, we are here to
             support you.
-          </p>
+          </p> */}
         </div>
       </div>
       <div className="flex space-x-[1.5rem]  justify-center pt-[4.88rem] pb-[11.87rem] overflow-hidden">

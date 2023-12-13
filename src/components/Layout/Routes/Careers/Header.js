@@ -36,7 +36,7 @@ const Header = () => {
         <Support onHideSupportModal={() => setSupportModal(false)} />
       )}
       <section className="background h-[65.12rem]">
-        <header className="max-w-[83rem] mx-auto flex justify-between pt-[9.5rem]">
+        <header className="max-w-[83rem] mx-auto flex justify-around pt-[9.5rem]">
           <div className="pt-[7.75rem]">
             <img src={Careers1} alt="" className="w-[21.25rem] h-[40.25rem]" />
           </div>
@@ -49,20 +49,19 @@ const Header = () => {
             </h4>
             <div className="flex justify-center flex-col items-center">
               <p className="pb-[2rem] text-[#1D1D1F] text-[1.375rem] font-medium leading-[1.875rem] tracking-[-0.0275rem]">
-                We believe economic prosperity is possible. We also <br />
-                believe permission-less and successful <br />
-                entrepreneurship in emerging markets is possible.
+                Are you ready to be a part of a dynamic team that is
+                <br /> all out to reshape the future of financial services?
                 <br />
               </p>
               <p className="pb-[2rem] text-[#1D1D1F] text-[1.375rem] font-medium leading-[1.875rem] tracking-[-0.0275rem]">
-                Our mission is making economic prosperity <br />
-                accessible to everyone, and we are looking for the <br />
-                best and right people that can help us accomplish <br />
-                this.
+                At FeedXPay, we believe in the power of innovation,
+                <br /> collaboration, and a shared commitment to <br />{" "}
+                excellence.
               </p>
               <p className="text-[#1D1D1F] text-[1.375rem] font-medium leading-[1.875rem] tracking-[-0.0275rem]">
-                We value unique contributions, embrace diversity in <br />
-                people and ideas and welcome everyone.
+                Explore exciting career opportunities with us and be
+                <br /> a driving force behind the evolution of the financial
+                <br /> landscape.
               </p>
             </div>
           </div>

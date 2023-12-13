@@ -8,7 +8,7 @@ const Experience = () => {
         <h1 className="text-[#017A59] text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem] pb-[1.25rem]">
           Feedxpay Experience
         </h1>
-        <p className="text-[#1D1D1F] pb-[6.25rem] text-[1.4rem] font-medium leading-[2.3125rem] tracking-[-0.03rem]">
+        <p className="text-[#1D1D1F] pb-[6.25rem] text-[1.4rem] text-center font-medium leading-[2.3125rem] tracking-[-0.03rem]">
           Looking for a place to explore your knowledge? Come and join a team of
           problem solvers,
           <br />

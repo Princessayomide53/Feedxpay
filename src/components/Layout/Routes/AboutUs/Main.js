@@ -3,7 +3,7 @@ import Splash from "../../../../Assets/Splash.png";
 
 const Main = () => {
   return (
-    <main className="max-w-[83rem] mx-auto flex justify-around pt-[6.5rem] pb-[6rem]">
+    <main className="max-w-[83rem] mx-auto flex justify-evenly pt-[6.5rem] pb-[6rem]">
       <div>
         <img
           src={Splash}
@@ -21,22 +21,25 @@ const Main = () => {
           Feedxpay came to be
         </h2>
         <p className="text-[1.375rem] font-medium leading-[2.125rem] text-[ #1D1D1F]">
-          Our cross-border payment solutions empower you <br /> to transact
-          effortlessly across the globe. Say
-          <br /> goodbye to complex and time-consuming
-          <br /> processes. <br />{" "}
+          Welcome to FeedXPay, where our journey is not
+          <br />
+          just a narrative but a commitment to redefining
+          <br /> how individuals and businesses navigate the
+          <br /> financial landscape.
         </p>
         <p className="pt-[2rem] text-[1.375rem] font-medium leading-[2.125rem] text-[ #1D1D1F]">
-          With our streamlined platform, you can send and
-          <br /> receive payments with speed, security, and
-          <br /> transparency. Embrace a world of possibilities and
-          <br /> connect with <br /> international markets seamlessly. <br />
+          Our journey began with a vision to simplify <br /> financial
+          processes, eliminate barriers to doing
+          <br /> business internationally, and empower users to
+          <br /> take control of their financial destinies. We <br />
+          embarked on a mission to create a platform that
+          <br /> goes beyond conventional banking, offering a<br />{" "}
+          comprehensive suite of services that cater to the
+          <br /> diverse needs of our users.
         </p>{" "}
         <p className="pt-[2rem] text-[1.375rem] font-medium leading-[2.125rem] text-[ #1D1D1F]">
-          With our streamlined platform, you can send and <br /> receive <br />
-          payments with speed, security, and transparency.
-          <br /> Embrace a world of possibilities and connect with <br />
-          international markets seamlessly.
+          FeedXPay is not just a platform, it's a commitment <br />
+          to your financial success.
         </p>
       </div>
     </main>

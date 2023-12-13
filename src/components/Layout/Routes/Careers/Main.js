@@ -8,37 +8,37 @@ const Main = () => {
       id: 1,
       image: customer,
       name: "Customer centricity",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "We place our valued customer, at the center of everything we do. Our customer-centric approach is more than a philosophy; it's a guiding principle that shapes every interaction",
     },
     {
       id: 2,
       image: customer,
       name: "OwnerShip",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "All members of our team take responsibility for understanding customer needs, providing tailored solutions, and ensuring that every interaction reflects our dedication to our customers satisfaction.",
     },
     {
       id: 3,
       image: customer,
       name: "Clear Communication",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "Transparency is the heartbeat of our company. We believe in clear, concise and open communication is encouraged at every touchpoint. ",
     },
     {
       id: 4,
       image: customer,
       name: "Innovation",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "We embrace the latest technologies to offer cutting-edge financial solutions. We constantly push the boundaries to bring you innovative services that redefine your financial experience..",
     },
     {
       id: 5,
       image: customer,
       name: "Adaptability and Flexibility",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "Whether it's adapting to new regulations or enhancing our services based on your feedback, we prioritize flexibility to ensure that our platform evolves with you.",
     },
     {
       id: 6,
       image: customer,
       name: "Obsession with high quality and excellence",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "Quality isn't just a standard we meet, it's an obsession that permeates every aspect of our services. Our commitment to high quality and excellence is unwavering.",
     },
   ];
   return (

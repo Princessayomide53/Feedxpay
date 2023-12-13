@@ -7,19 +7,19 @@ const Main = () => {
       id: 1,
       num: "01",
       name: "Payment without boundaries",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Our Virtual Cards are widely accepted internationally, making them an ideal solution for seamless cross-border transactions.",
     },
     {
       id: 2,
       num: "02",
       name: "USD transactions made easy",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Use our Virtual Cards for subscriptions and recurring payments. Easily track and manage your subscriptions without the need for manual intervention.",
     },
     {
       id: 3,
       num: "03",
       name: "Highly Secured",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Virtual Cards offer an additional layer of security for online purchases, reducing the risk of unauthorized access and fraud.",
     },
   ];
   return (

@@ -7,25 +7,25 @@ const Benefits = () => {
       id: 1,
       num: "01",
       name: "Competitive Salary",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "We believe in recognizing and rewarding excellence. Enjoy a competitive salary that reflects your expertise",
     },
     {
       id: 2,
       num: "02",
       name: "Paid Leave",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "We understand the importance of work-life balance and provide generous paid leave policies, allowing you to recharge and pursue personal interests.",
     },
     {
       id: 3,
       num: "03",
       name: "Allowances",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Beyond your salary, FeedXPay offers various allowances to cater to different aspects of your professional and personal life.",
     },
     {
       id: 4,
       num: "04",
       name: "Learning and Development",
-      text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
+      text: "Your growth is our priority. We invest in your professional development because we believe in the power of a well-equipped and empowered team.",
     },
   ];
   return (
@@ -46,7 +46,7 @@ const Benefits = () => {
         {benefits.map((item) => (
           <Card
             key={item.id}
-            className="w-[23.3125rem] h-[18.8125rem] relative bg-[#EBFFF5] bg-opacity-40  rounded-xl shadow-md p-[1.82rem]"
+            className="w-[23.3125rem] h-[18.8125rem] relative bg-white bg-opacity-40  rounded-xl shade p-[1.82rem]"
           >
             {" "}
             <p className="text-[#017A59] text-opacity-40 text-[2.875rem] font-bold leading-[3.875rem] tracking-[-0.0575rem]">

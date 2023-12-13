@@ -12,19 +12,19 @@ const Manage = () => {
       id: 1,
       img: GreenCard,
       title: "Select Card Type",
-      text: "Make (Local and international transactions) and scheduled payments",
+      text: "Select your preferred card type (Mastercard or Visa)",
     },
     {
       id: 2,
       img: wallet,
       title: "Exchange Currency",
-      text: "Make (Local and international transactions) and scheduled payments",
+      text: "Exchange your wallet balance to your preferred currency",
     },
     {
       id: 3,
       img: Machine,
       title: "Debit Card Transaction History",
-      text: "Make (Local and international transactions) and scheduled payments",
+      text: "Get an overview of your transaction history",
     },
   ];
   return (
@@ -38,7 +38,7 @@ const Manage = () => {
           {manage.map((data) => (
             <Card
               key={data.id}
-              className="border-2 transition-all ease-in-out duration-300 border-[#E8E9EB] rounded-lg hover:bg-[#EBFFF5] hover:bg-opacity-40 w-[36.875rem] flex items-center gap-[1.5rem] h-[9.25rem] px-[2rem] py-[0.5rem]"
+              className="border-2 transition-all ease-in-out duration-300 border-[#E8E9EB] rounded-lg hover:bg-[#EBFFF5] hover:bg-opacity-40 hover:border-0 w-[36.875rem] flex items-center gap-[1.5rem] h-[9.25rem] px-[2rem] py-[0.5rem]"
             >
               <div>
                 <img

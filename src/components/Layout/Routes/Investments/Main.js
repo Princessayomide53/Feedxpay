@@ -12,21 +12,21 @@ const Main = () => {
       id: 1,
       img: [Netflix, T, $],
       name: "stocks",
-      risks: "High",
-      text: "Choose your preferred savings plan and complete the important informations required.",
+      risks: "High Risks",
+      text: "Stocks come with a high risk , but provides you with a high reward margin.",
     },
     {
       id: 2,
       img: Estate,
       name: "stocks",
-      risks: "High",
-      text: "Choose your preferred savings plan and complete the important informations required.",
+      risks: "Medium Risks",
+      text: "Real estate is one of the oldest and reliable investment types in existence today with a medium risk margin.",
     },
     {
       id: 3,
       img: Income,
       name: "stocks",
-      risks: "High",
+      risks: "Low Risks",
       text: "Choose your preferred savings plan and complete the important informations required.",
     },
   ];
@@ -43,7 +43,7 @@ const Main = () => {
       <div className="flex justify-between ">
         {stocks.map((item, index) => (
           <Card
-            className="w-[25.625rem] h-[20.8125rem] cursor-pointer hover:shadow-xl px-[0.8rem] py-[2rem] border-[2px] transition-all duration-300 ease-in-out rounded-lg hover:bg-[#EBFFF5] hover:bg-opacity-40 border-[#E8E9EB]"
+            className="w-[25.625rem] h-[20.8125rem] cursor-pointer hover:shadow-xl hover:border-0 px-[0.8rem] py-[2rem] border-[1px] transition-all duration-300 ease-in-out rounded-lg hover:bg-[#EBFFF5] hover:bg-opacity-40 border-[#E8E9EB]"
             key={item.id}
           >
             <div className="flex">
