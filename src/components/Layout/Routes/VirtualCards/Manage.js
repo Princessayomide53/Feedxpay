@@ -35,7 +35,7 @@ const Manage = () => {
       </h2>
       <div className="flex justify-between pb-[15.38rem]">
         <div className=" flex flex-col space-y-[2.5rem]">
-          {manage.map((data) => (
+          {manage.map((data, index) => (
             <Card
               key={data.id}
               className="border-2 transition-all ease-in-out duration-300 border-[#E8E9EB] rounded-lg hover:bg-[#EBFFF5] hover:bg-opacity-40 hover:border-0 w-[36.875rem] flex items-center gap-[1.5rem] h-[9.25rem] px-[2rem] py-[0.5rem]"
@@ -52,7 +52,11 @@ const Manage = () => {
                   {data.title}
                 </h2>
 
-                <p className="pt-[1rem] text-[#1D1D1F] leading-[1.75rem] text-[1.25rem] font-medium tracking-[-0.025rem]">
+                <p
+                  className={`pt-[1rem] text-[#1D1D1F] leading-[1.75rem] text-[1.25rem] font-medium tracking-[-0.025rem] ${
+                    index === 0 ? "w-[20rem]" : ""
+                  }`}
+                >
                   {data.text}
                 </p>
               </div>

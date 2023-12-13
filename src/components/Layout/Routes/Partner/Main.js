@@ -7,13 +7,13 @@ const Main = () => {
       id: 1,
       num: "01",
       name: "Customer centricity",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "Partnering with FeedXPay opens doors to a global network. Expand your reach and tap into new markets and generate exponential revenue.",
     },
     {
       id: 2,
       num: "02",
       name: "Ownership",
-      text: "We continuously seek  truth, learn and improve in areas of making important decision that as to do with work, relationship, customer centricity and everything that is critical to our business.",
+      text: "We provide cutting-edge technology and a comprehensive suite of financial services, ensuring that you and your clients benefit from the latest advancements in the industry.",
     },
     {
       id: 3,

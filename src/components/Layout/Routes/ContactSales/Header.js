@@ -40,15 +40,15 @@ const Header = () => {
         <header className="pt-[1.5rem] relative">
           <img src={Contact} alt="" className="w-full" />
           <div className="overlay absolute top-0 left-0 w-full h-full bg-[#b8d4c6] bg-opacity-50"></div>
-          <div className="text-overlay absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            <h1 className="text-[#1D1D1F] text-[3.1875rem] font-extrabold leading-[4.375rem]">
+          <div className="text-overlay absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center w-full">
+            <h1 className="text-[#1D1D1F]  transform  text-[3.1875rem] font-extrabold leading-[4.375rem]">
               We are here to point you <br />
               in the <span className="text-[#017A59]">right directions</span>
             </h1>
-            <p className="pt-[1.5rem] text-[#1D1D1F] text-[1.5rem] font-medium leading-[2.3125rem] tracking-[-0.03rem]">
-              Collaborate with us today and start generating more
+            <p className="pt-[1.5rem] text-[#1D1D1F] w-full text-[1.5rem] font-medium leading-[2.3125rem] tracking-[-0.03rem]">
+              Need more assistance? Have more questions? We have the an amazing{" "}
               <br />
-              revenue, add value and expand your business.
+              support team who are ready to help you through.
             </p>
             <Link to="/support/1">
               <button className="mt-[4.56rem]  px-7 py-3 rounded-lg bg-[#017A59] text-white text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
