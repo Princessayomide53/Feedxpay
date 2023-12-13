@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import Card from "../../../UI/Card";
 import { IoIosArrowUp } from "react-icons/io";
+import { IoIosArrowDown } from "react-icons/io";
 import { Link } from "react-router-dom";
 
 const Frequent = () => {
-  const Interest = [
+  const Interests = [
     {
       id: 1,
       question: "What kind of investments do I get from Feedxpay?",
@@ -32,6 +33,16 @@ const Frequent = () => {
       text: "Our solution makes it easy for businesses, companies and other financial institutions to make global payment and receive with multiple currencies.",
     },
   ];
+
+  const [interest, setInterest] = useState(Interests.map(() => false));
+
+  const handleInterest = (index) => {
+    setInterest((prevInterest) => {
+      const newInterest = [...prevInterest];
+      newInterest[index] = !newInterest[index];
+      return newInterest;
+    });
+  };
   return (
     <section className="max-w-[83rem] mx-auto flex justify-between">
       <div className="pt-[13.56rem]">
@@ -54,17 +65,45 @@ const Frequent = () => {
         </Link>
       </div>
       <div className="flex flex-col space-y-[3.25rem] pt-[6.25rem] pb-[7rem] ">
-        {Interest.map((item) => (
-          <Card
-            key={item.id}
-            className="w-[42.3125rem] h-[5.75rem]  rounded-xl shadow-lg px-[1.52rem] py-[1rem] flex justify-start items-center"
-          >
-            {" "}
-            <h4 className="text-[#017A59] w-[37rem] text-[1.175rem] font-semibold leading-[2rem]">
-              {item.question}
-            </h4>
-            <IoIosArrowUp className="text-2xl" />
-          </Card>
+        {Interests.map((item, index) => (
+          <div key={item.id}>
+            <Card
+              onClick={() => {
+                handleInterest(index);
+              }}
+              className="w-[42.3125rem] cursor-pointer h-[5.75rem]  rounded-xl shadow-lg px-[1.52rem] py-[1rem] flex justify-start items-center"
+            >
+              {" "}
+              <h4
+                onClick={() => {
+                  handleInterest(index);
+                }}
+                className="text-[#017A59] w-[37rem] text-[1.175rem] font-semibold leading-[2rem]"
+              >
+                {item.question}
+              </h4>
+              {interest[index] ? (
+                <IoIosArrowUp
+                  className="text-2xl cursor-pointer"
+                  onClick={() => {
+                    handleInterest(index);
+                  }}
+                />
+              ) : (
+                <IoIosArrowDown
+                  className="text-2xl cursor-pointer"
+                  onClick={() => {
+                    handleInterest(index);
+                  }}
+                />
+              )}
+            </Card>
+            {interest[index] && (
+              <Card className="w-[42.3125rem] h-[5.75rem] mt-2  transition-all duration-300 ease-in-out rounded-xl shadow-lg px-[1.52rem] py-[1rem] flex justify-start items-center">
+                {item.text}
+              </Card>
+            )}
+          </div>
         ))}
       </div>
     </section>
