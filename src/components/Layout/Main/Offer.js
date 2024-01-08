@@ -17,7 +17,7 @@ const Offer = () => {
           <p className="text-[#017A59] text-[1.375rem] leading-[2rem] font-semibold pt-[2rem] pb-[1.06rem]">
             Secure Transactions
           </p>
-          <p className="text-[#1D1D1F] text-[1.125rem] font-medium leading-[1.5rem]">
+          <p className="text-[#1D1D1F] xl:text-[1.125rem] lg:text-sm font-medium xl:leading-[1.5rem]">
             Your security is our top priority.
             <br /> With state-of-the-art encryption
             <br />
@@ -35,10 +35,10 @@ const Offer = () => {
               />
             </div>
           </Card>
-          <p className="text-[#017A59] text-[1.375rem] leading-[2rem] font-semibold pt-[2rem] pb-[1.06rem]">
+          <p className="text-[#017A59] text-[1.375rem]  leading-[2rem] font-semibold pt-[2rem] pb-[1.06rem]">
             User-Friendly Interface
           </p>
-          <p className="text-[#1D1D1F] text-[1.125rem] font-medium leading-[1.5rem]">
+          <p className="text-[#1D1D1F] xl:text-[1.125rem] lg:text-sm font-medium xl:leading-[1.5rem]">
             Our intuitive interface makes payments
             <br /> easy for everyone. No more navigating <br />
             through complex processes with FeedXPay, <br />
@@ -54,7 +54,7 @@ const Offer = () => {
           <p className="text-[#017A59] text-[1.375rem] leading-[2rem] font-semibold pt-[2rem] pb-[1.06rem]">
             Versatile Solutions
           </p>
-          <p className="text-[#1D1D1F] text-[1.125rem] font-medium leading-[1.5rem]">
+          <p className="text-[#1D1D1F] xl:text-[1.125rem] lg:text-sm font-medium xl:leading-[1.5rem]">
             From mobile payments to online
             <br />
             transactions, FeedXPay offers a wide

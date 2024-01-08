@@ -11,14 +11,14 @@ const Footer = () => {
   return (
     <>
       <footer className="h-[69.875rem] bg-[#017A59] ">
-        <div className="max-w-[83rem] mx-auto grid grid-cols-5 pt-[6.25rem] text-white">
+        <div className="mac:max-w-[83rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto grid grid-cols-5 pt-[6.25rem] text-white">
           <div className="mr-20">
             <img src={Logo2} alt="" className="object-cover" />
-            <div className="text-2xl flex gap-[2.25rem] py-[2.25rem]">
-              <FaFacebookF className="text-white" />
-              <FaLinkedinIn className="text-white" />
-              <FaTwitter className="text-white" />
-              <IoLogoInstagram className="text-white" />
+            <div className="text-3xl flex gap-[2.25rem] py-[2.25rem]">
+              <FaFacebookF className="text-white xl:text-3xl lg:text-4xl" />
+              <FaLinkedinIn className="text-white xl:text-3xl lg:text-4xl" />
+              <FaTwitter className="text-white xl:text-3xl lg:text-4xl" />
+              <IoLogoInstagram className="text-white xl:text-3xl lg:text-4xl" />
             </div>
           </div>
           <div className="space-y-[1.5rem]">

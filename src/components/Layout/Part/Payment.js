@@ -103,7 +103,7 @@ const Payment = () => {
         >
           PAYMENTS
         </h1>
-        <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+        <p className="pb-[5.38rem] text-[#1D1D1F] mac:text-[1.25rem] xl:text-[1.1rem] lg:text-[0.9rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
           Make (Local and international transactions)
           <br />
           and scheduled payments
@@ -119,7 +119,7 @@ const Payment = () => {
         >
           VIRTUAL CARDS
         </h1>
-        <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+        <p className="pb-[5.38rem] text-[#1D1D1F] mac:text-[1.25rem] xl:text-[1.1rem] lg:text-[0.9rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
           One tool, one easy way to transact business
           <br />
           seemlessly.
@@ -135,7 +135,7 @@ const Payment = () => {
         >
           SAVINGS
         </h1>
-        <p className="pb-[5.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+        <p className="pb-[5.38rem] text-[#1D1D1F] mac:text-[1.25rem] xl:text-[1.1rem] lg:text-[0.9rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
           Attaining financial success is possible, but <br />
           only through strategic savings.
         </p>
@@ -152,7 +152,7 @@ const Payment = () => {
         >
           INVESTMENTS
         </h1>
-        <p className="pb-[6.38rem] text-[#1D1D1F] text-[1.25rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
+        <p className="pb-[6.38rem] text-[#1D1D1F] mac:text-[1.25rem] xl:text-[1.1rem] lg:text-[0.9rem] font-medium leading-[1.75rem] tracking-[-0.025rem]">
           Generate positive returns over a period of time by <br />
           investing with us today.
         </p>
@@ -163,7 +163,7 @@ const Payment = () => {
           <img
             src={Money}
             alt=""
-            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+            className="object-cover mac:w-[44.1875rem] xl:w-[42.1875rem] lg:w-[32.1875rem] h-[44.1875rem]"
           />
         </div>
       ) : "" || activeSection === "VIRTUAL CARDS" ? (
@@ -171,7 +171,7 @@ const Payment = () => {
           <img
             src={Virtual}
             alt=""
-            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+            className="object-cover mac:w-[44.1875rem] xl:w-[42.1875rem] lg:w-[32.1875rem] h-[44.1875rem]"
           />
         </div>
       ) : "" || activeSection === "SAVINGS" ? (
@@ -179,7 +179,7 @@ const Payment = () => {
           <img
             src={Saves}
             alt=""
-            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+            className="object-cover mac:w-[44.1875rem] xl:w-[42.1875rem] lg:w-[32.1875rem] h-[44.1875rem]"
           />
         </div>
       ) : "" || activeSection === "INVESTMENTS" ? (
@@ -187,7 +187,7 @@ const Payment = () => {
           <img
             src={Invest}
             alt=""
-            className="object-cover w-[44.1875rem] h-[44.1875rem]"
+            className="object-cover mac:w-[44.1875rem] xl:w-[42.1875rem] lg:w-[34.1875rem] h-[44.1875rem]"
           />
         </div>
       ) : (

@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../App.css";
 import Logo from "../../../Assets/Logo.png";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { Link, useLocation } from "react-router-dom";
 import { HashLink as HashRouterLink } from "react-router-hash-link";
+import { Squash as Hamburger } from "hamburger-react";
 
 const Nav = (props) => {
+  const [nav, setNav] = useState(false);
   const location = useLocation();
+
+  const handleClick = () => {
+    setNav(false);
+  };
 
   return (
     <section className="bg">
-      <nav className="fixed left-0 top-0 w-full bg h-[10.5rem] z-30">
-        <div className="flex py-5 max-w-[83rem] mx-auto space-x-[5rem]">
+      <nav className="lg:fixed fixed left-0 top-0 w-full bg h-[8.63rem] lg:h-[10.5rem] z-30">
+        <div className="flex py-5 mac:max-w-[83rem] pro:max-w-[52rem] max-w-[25rem] xl:max-w-[75rem] md:max-w-[45rem] lg:max-w-[60rem] mx-auto space-x-[5rem]">
           <Link to="/">
             <button
               className={
@@ -19,8 +25,8 @@ const Nav = (props) => {
                 location.pathname.startsWith("/home/") ||
                 location.pathname.startsWith("/main/") ||
                 location.pathname.startsWith("/support/")
-                  ? "active text-[#017A59] uppercase pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
-                  : "text-[#8A9099] uppercase text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
+                  ? "active text-[#017A59] uppercase text-xs xl:text-base pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
+                  : "text-[#8A9099] uppercase text-xs xl:text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
               }
             >
               For Individuals
@@ -31,8 +37,8 @@ const Nav = (props) => {
             <button
               className={
                 location.pathname === "/business"
-                  ? "active text-[#017A59] uppercase pb-2 cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
-                  : "text-[#8A9099] uppercase text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
+                  ? "active text-[#017A59] uppercase pb-2 text-xs xl:text-base cursor-pointer border-b-[3px] border-[#017A59] font-semibold leading-normal tracking-[-0.02rem]"
+                  : "text-[#8A9099] uppercase text-xs xl:text-[1rem] cursor-pointer font-semibold leading-normal tracking-[-0.02rem]"
               }
             >
               For Business
@@ -40,9 +46,28 @@ const Nav = (props) => {
           </Link>
         </div>
 
-        <div className="flex justify-between max-w-[83rem] mx-auto py-[1.17rem]">
+        <div className="flex justify-between max-w-[25rem] mx-auto py-[0.85rem] md:max-w-[45rem] pro:max-w-[52rem] lg:hidden">
           <Link to="/">
-            <img src={Logo} alt="" className="w-[14.5rem] h-[2.5rem]" />
+            <img
+              src={Logo}
+              alt=""
+              className="lg:w-[14.5rem] lg:h-[2.5rem] w-[8.4375rem] h-[1.4375rem] lg:hidden block"
+            />{" "}
+          </Link>
+          <div className="lg:hidden block ">
+            <Hamburger
+              direction="squash"
+              size={25}
+              color="black"
+              className="burger-menu"
+              toggled={nav}
+              toggle={() => setNav(!nav)}
+            />
+          </div>
+        </div>
+        <div className="lg:flex hidden justify-between mac:max-w-[83rem] xl:max-w-[75rem] lg:max-w-[60rem] mx-auto py-[1.17rem]">
+          <Link to="/">
+            <img src={Logo} alt="" className="w-[14.5rem] h-[2.5rem] " />
           </Link>
 
           <ul className="flex space-x-[3.12rem] mt-3">
@@ -73,7 +98,7 @@ const Nav = (props) => {
               <Link to="/signIn">Sign in</Link>
             </p> */}
             <HashRouterLink smooth to="#section1">
-              <button className="bg-[#017A59] text-white px-5 py-3 rounded-xl  text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
+              <button className="bg-[#017A59] text-white hidden lg:block px-5 py-3 rounded-xl  text-[1.125rem] font-semibold leading-[1.5rem] tracking-[-0.0225rem]">
                 Get Started
               </button>
             </HashRouterLink>
