@@ -23,12 +23,12 @@ const Join = () => {
           <img
             src={pngwing1}
             alt="get on ios"
-            className="xl:w-[14.3125rem] lg:w-[12.3125rem] object-contain h-[5.3475rem]  mt-[0.38rem]"
+            className="xl:w-[14.3125rem] lg:w-[12.3125rem] object-contain h-[5.3475rem] w-[5rem]  mt-[0.38rem]"
           />
           <img
             src={pngwing2}
             alt="get on ios"
-            className="xl:w-[14.3125rem] lg:w-[12.3125rem] object-contain h-[4.25rem] mt-[0.94rem]"
+            className="xl:w-[14.3125rem] lg:w-[12.3125rem] object-contain w-[5rem] h-[4.25rem] mt-[0.94rem]"
           />
         </div>
       </div>

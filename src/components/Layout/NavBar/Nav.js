@@ -17,7 +17,7 @@ const Nav = (props) => {
   return (
     <section className="bg">
       <nav className="lg:fixed fixed left-0 top-0 w-full bg h-[8.63rem] lg:h-[10.5rem] z-30">
-        <div className="flex py-5 mac:max-w-[83rem] pro:max-w-[52rem] max-w-[25rem] xl:max-w-[75rem] md:max-w-[45rem] lg:max-w-[60rem] mx-auto space-x-[5rem]">
+        <div className="flex py-5 mac:max-w-[83rem] pro:max-w-[52rem] max-w-[22rem] xl:max-w-[75rem] md:max-w-[45rem] lg:max-w-[60rem] mx-auto space-x-[5rem]">
           <Link to="/">
             <button
               className={
@@ -46,7 +46,7 @@ const Nav = (props) => {
           </Link>
         </div>
 
-        <div className="flex justify-between max-w-[25rem] mx-auto py-[0.85rem] md:max-w-[45rem] pro:max-w-[52rem] lg:hidden">
+        <div className="flex justify-between max-w-[22rem] mx-auto py-[0.85rem] md:max-w-[45rem] pro:max-w-[52rem] lg:hidden">
           <Link to="/">
             <img
               src={Logo}
